@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Aerosol_cans</folder>
+	<filename>Aerosol_cans132.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\18mHC6EH4uyesRVxj_2L-qvsVwLds8pxs\CE_Project\Dataset\Hazardous waste\Aerosol_cans\Aerosol_cans132.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>577</width>
+		<height>540</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Aerosol_cans</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>211</xmin>
+			<ymin>69</ymin>
+			<xmax>348</xmax>
+			<ymax>474</ymax>
+		</bndbox>
+	</object>
+</annotation>
