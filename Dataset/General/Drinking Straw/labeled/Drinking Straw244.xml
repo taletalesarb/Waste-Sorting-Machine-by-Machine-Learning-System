@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Drinking Straw</folder>
+	<filename>Drinking Straw244.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\18mHC6EH4uyesRVxj_2L-qvsVwLds8pxs\CE_Project\Dataset\General\Drinking Straw\Drinking Straw244.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>444</width>
+		<height>449</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Drinking Straw</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>212</xmin>
+			<ymin>85</ymin>
+			<xmax>431</xmax>
+			<ymax>393</ymax>
+		</bndbox>
+	</object>
+</annotation>
