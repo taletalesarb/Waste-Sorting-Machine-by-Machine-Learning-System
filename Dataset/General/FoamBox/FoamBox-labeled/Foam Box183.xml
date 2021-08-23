@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Foam Box</folder>
+	<filename>Foam Box183.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\18mHC6EH4uyesRVxj_2L-qvsVwLds8pxs\CE_Project\Dataset\General\Foam Box\Foam Box183.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Foam Box</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>32</xmin>
+			<ymin>12</ymin>
+			<xmax>468</xmax>
+			<ymax>353</ymax>
+		</bndbox>
+	</object>
+</annotation>
