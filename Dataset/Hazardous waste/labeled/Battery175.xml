@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Battery</folder>
+	<filename>Battery175.jpg</filename>
+	<path>D:\project\Waste-Sorting-Machine-by-Machine-Learning-System\Dataset\Hazardous waste\Battery\Battery175.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>340</width>
+		<height>340</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Battery</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>64</xmin>
+			<ymin>144</ymin>
+			<xmax>274</xmax>
+			<ymax>203</ymax>
+		</bndbox>
+	</object>
+</annotation>
