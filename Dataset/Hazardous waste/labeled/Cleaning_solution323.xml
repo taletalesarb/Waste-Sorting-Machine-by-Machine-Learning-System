@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Cleaning_solution</folder>
+	<filename>Cleaning_solution323.jpg</filename>
+	<path>D:\project\Waste-Sorting-Machine-by-Machine-Learning-System\Dataset\Hazardous waste\Cleaning_solution\Cleaning_solution323.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>644</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Cleaning_solution</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>223</xmin>
+			<ymin>57</ymin>
+			<xmax>370</xmax>
+			<ymax>611</ymax>
+		</bndbox>
+	</object>
+</annotation>
