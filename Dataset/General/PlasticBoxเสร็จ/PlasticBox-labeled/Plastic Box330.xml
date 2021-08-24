@@ -1,0 +1,26 @@
+<annotation>
+	<folder>PlasticBox</folder>
+	<filename>Plastic Box330.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\18mHC6EH4uyesRVxj_2L-qvsVwLds8pxs\CE_Project\Dataset\General\PlasticBox\Plastic Box330.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>753</width>
+		<height>502</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>PlasticBox</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>212</xmin>
+			<ymin>188</ymin>
+			<xmax>536</xmax>
+			<ymax>308</ymax>
+		</bndbox>
+	</object>
+</annotation>
