@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Tissue</folder>
+	<filename>Tissue262.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\18mHC6EH4uyesRVxj_2L-qvsVwLds8pxs\CE_Project\Dataset\General\Tissue\Tissue262.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>626</width>
+		<height>417</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Tissue</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>202</xmin>
+			<ymin>88</ymin>
+			<xmax>444</xmax>
+			<ymax>267</ymax>
+		</bndbox>
+	</object>
+</annotation>
