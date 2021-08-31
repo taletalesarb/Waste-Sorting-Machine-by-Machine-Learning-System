@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Correction_fluid</folder>
+	<filename>Correction_fluid46.jpg</filename>
+	<path>D:\project\Hazardous waste\Correction_fluid\Correction_fluid46.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>150</width>
+		<height>181</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Correction_fluid</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>8</xmin>
+			<ymin>4</ymin>
+			<xmax>78</xmax>
+			<ymax>144</ymax>
+		</bndbox>
+	</object>
+</annotation>
