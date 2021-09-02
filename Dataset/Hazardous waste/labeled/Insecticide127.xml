@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Insecticide</folder>
+	<filename>Insecticide127.jpg</filename>
+	<path>D:\project\Hazardous waste\Insecticide\Insecticide127.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>329</width>
+		<height>235</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Insecticide</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>144</xmin>
+			<ymin>24</ymin>
+			<xmax>287</xmax>
+			<ymax>208</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Insecticide</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>51</xmin>
+			<ymin>38</ymin>
+			<xmax>195</xmax>
+			<ymax>211</ymax>
+		</bndbox>
+	</object>
+</annotation>
