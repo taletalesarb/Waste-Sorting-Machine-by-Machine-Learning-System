@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Light_bulb</folder>
+	<filename>Light_bulb403.jpg</filename>
+	<path>D:\project\Hazardous waste\Light_bulb\Light_bulb403.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>801</width>
+		<height>676</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Light_bulb</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>291</xmin>
+			<ymin>174</ymin>
+			<xmax>512</xmax>
+			<ymax>547</ymax>
+		</bndbox>
+	</object>
+</annotation>
