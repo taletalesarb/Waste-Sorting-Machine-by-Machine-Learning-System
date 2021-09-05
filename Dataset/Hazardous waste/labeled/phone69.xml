@@ -1,0 +1,38 @@
+<annotation>
+	<folder>phone</folder>
+	<filename>phone69.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\18mHC6EH4uyesRVxj_2L-qvsVwLds8pxs\CE_Project\Dataset\Hazardous waste\phone\phone69.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Phone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>67</xmin>
+			<ymin>105</ymin>
+			<xmax>284</xmax>
+			<ymax>508</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Phone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>648</xmin>
+			<ymin>152</ymin>
+			<xmax>901</xmax>
+			<ymax>599</ymax>
+		</bndbox>
+	</object>
+</annotation>

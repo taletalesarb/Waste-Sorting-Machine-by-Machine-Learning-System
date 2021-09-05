@@ -1,0 +1,26 @@
+<annotation>
+	<folder>phone</folder>
+	<filename>phone291.jpg</filename>
+	<path>D:\project\Hazardous waste\phone\phone291.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>738</width>
+		<height>571</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>phone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>69</xmin>
+			<ymin>16</ymin>
+			<xmax>655</xmax>
+			<ymax>523</ymax>
+		</bndbox>
+	</object>
+</annotation>
