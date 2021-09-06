@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Three_eye_plug</folder>
+	<filename>Three_eye_plug63.jpg</filename>
+	<path>D:\project\Hazardous waste\Three_eye_plug\Three_eye_plug63.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Three_eye_plug</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>34</xmin>
+			<ymin>53</ymin>
+			<xmax>610</xmax>
+			<ymax>608</ymax>
+		</bndbox>
+	</object>
+</annotation>
