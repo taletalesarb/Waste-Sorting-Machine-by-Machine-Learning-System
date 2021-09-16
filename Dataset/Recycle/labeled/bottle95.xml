@@ -1,0 +1,26 @@
+<annotation>
+	<folder>bottle</folder>
+	<filename>bottle95.jpg</filename>
+	<path>G:\My Drive\CE_Project\Dataset\Recycle\bottle\bottle95.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>244</width>
+		<height>207</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>7</xmin>
+			<ymin>2</ymin>
+			<xmax>243</xmax>
+			<ymax>207</ymax>
+		</bndbox>
+	</object>
+</annotation>

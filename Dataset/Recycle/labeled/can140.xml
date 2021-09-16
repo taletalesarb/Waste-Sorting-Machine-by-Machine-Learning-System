@@ -1,0 +1,26 @@
+<annotation>
+	<folder>can</folder>
+	<filename>can140.jpg</filename>
+	<path>G:\My Drive\CE_Project\Dataset\Recycle\can\can140.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>can</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>152</xmin>
+			<ymin>145</ymin>
+			<xmax>356</xmax>
+			<ymax>309</ymax>
+		</bndbox>
+	</object>
+</annotation>
