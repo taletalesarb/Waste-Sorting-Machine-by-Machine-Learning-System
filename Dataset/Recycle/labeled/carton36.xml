@@ -1,0 +1,26 @@
+<annotation>
+	<folder>carton</folder>
+	<filename>carton36.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\1QjkP-g9WnzCs2AXko23CfxIBr_eyZm1o\Recycle\carton\carton36.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>380</width>
+		<height>380</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>carton</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>128</xmin>
+			<ymin>16</ymin>
+			<xmax>259</xmax>
+			<ymax>355</ymax>
+		</bndbox>
+	</object>
+</annotation>
