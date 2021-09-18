@@ -1,0 +1,26 @@
+<annotation>
+	<folder>carton</folder>
+	<filename>carton1.jpg</filename>
+	<path>G:\My Drive\CE_Project\Dataset\Recycle\carton\carton1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>470</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>carton</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>220</xmin>
+			<ymin>36</ymin>
+			<xmax>379</xmax>
+			<ymax>426</ymax>
+		</bndbox>
+	</object>
+</annotation>

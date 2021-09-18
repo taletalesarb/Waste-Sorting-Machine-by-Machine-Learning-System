@@ -1,0 +1,26 @@
+<annotation>
+	<folder>glass_bottle</folder>
+	<filename>glass_bottle162.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\1QjkP-g9WnzCs2AXko23CfxIBr_eyZm1o\Recycle\glass_bottle\glass_bottle162.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3000</width>
+		<height>3000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>glass_bottleww</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>966</xmin>
+			<ymin>247</ymin>
+			<xmax>2075</xmax>
+			<ymax>2988</ymax>
+		</bndbox>
+	</object>
+</annotation>
