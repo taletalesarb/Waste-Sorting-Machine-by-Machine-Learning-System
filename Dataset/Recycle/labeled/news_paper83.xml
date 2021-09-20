@@ -1,0 +1,26 @@
+<annotation>
+	<folder>news_paper</folder>
+	<filename>news_paper83.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\1QjkP-g9WnzCs2AXko23CfxIBr_eyZm1o\Recycle\news_paper\news_paper83.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2400</width>
+		<height>2400</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>news_paper</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>8</xmin>
+			<ymin>771</ymin>
+			<xmax>2392</xmax>
+			<ymax>2400</ymax>
+		</bndbox>
+	</object>
+</annotation>

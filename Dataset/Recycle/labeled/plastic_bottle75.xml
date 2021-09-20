@@ -1,0 +1,26 @@
+<annotation>
+	<folder>plastic_bottle</folder>
+	<filename>plastic_bottle75.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\1QjkP-g9WnzCs2AXko23CfxIBr_eyZm1o\Recycle\plastic_bottle\plastic_bottle75.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>509</width>
+		<height>339</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plastic_bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>29</xmin>
+			<ymin>36</ymin>
+			<xmax>373</xmax>
+			<ymax>289</ymax>
+		</bndbox>
+	</object>
+</annotation>
