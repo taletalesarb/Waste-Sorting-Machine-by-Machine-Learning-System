@@ -1,0 +1,26 @@
+<annotation>
+	<folder>plastic_glass</folder>
+	<filename>plastic_glass107.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\1QjkP-g9WnzCs2AXko23CfxIBr_eyZm1o\Recycle\plastic_glass\plastic_glass107.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>200</width>
+		<height>200</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plastic_glass</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>36</xmin>
+			<ymin>18</ymin>
+			<xmax>177</xmax>
+			<ymax>190</ymax>
+		</bndbox>
+	</object>
+</annotation>
