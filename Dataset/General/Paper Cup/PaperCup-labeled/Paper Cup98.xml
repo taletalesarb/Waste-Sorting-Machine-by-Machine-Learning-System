@@ -1,0 +1,26 @@
+<annotation>
+	<folder>PaperCup</folder>
+	<filename>Paper Cup98.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\18mHC6EH4uyesRVxj_2L-qvsVwLds8pxs\CE_Project\Dataset\General\PaperCup\Paper Cup98.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>PaperCup</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>4</xmin>
+			<ymin>44</ymin>
+			<xmax>136</xmax>
+			<ymax>208</ymax>
+		</bndbox>
+	</object>
+</annotation>
