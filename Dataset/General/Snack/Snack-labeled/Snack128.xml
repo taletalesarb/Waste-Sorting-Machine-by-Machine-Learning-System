@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Snack</folder>
+	<filename>Snack128.jpg</filename>
+	<path>G:\.shortcut-targets-by-id\18mHC6EH4uyesRVxj_2L-qvsVwLds8pxs\CE_Project\Dataset\General\Snack\Snack128.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1600</width>
+		<height>1200</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Snack</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>224</xmin>
+			<ymin>16</ymin>
+			<xmax>1365</xmax>
+			<ymax>1200</ymax>
+		</bndbox>
+	</object>
+</annotation>
