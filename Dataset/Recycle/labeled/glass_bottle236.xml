@@ -1,0 +1,26 @@
+<annotation>
+	<folder>glass_bottle</folder>
+	<filename>glass_bottle236.jpg</filename>
+	<path>G:\My Drive\CE_Project\Dataset\Recycle\glass_bottle\glass_bottle236.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>425</width>
+		<height>425</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>glass_bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>157</xmin>
+			<ymin>15</ymin>
+			<xmax>269</xmax>
+			<ymax>407</ymax>
+		</bndbox>
+	</object>
+</annotation>
