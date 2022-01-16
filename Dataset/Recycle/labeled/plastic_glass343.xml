@@ -1,0 +1,26 @@
+<annotation>
+	<folder>plastic_glass</folder>
+	<filename>plastic_glass343.jpg</filename>
+	<path>G:\My Drive\CE_Project\Dataset\Recycle\plastic_glass\plastic_glass343.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>302</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plastic_glass</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>53</xmin>
+			<ymin>21</ymin>
+			<xmax>283</xmax>
+			<ymax>444</ymax>
+		</bndbox>
+	</object>
+</annotation>
