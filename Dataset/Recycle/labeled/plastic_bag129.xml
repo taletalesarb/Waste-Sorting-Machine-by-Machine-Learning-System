@@ -1,0 +1,26 @@
+<annotation>
+	<folder>plastic_bag</folder>
+	<filename>plastic_bag129.jpg</filename>
+	<path>G:\My Drive\CE_Project\Dataset\Recycle\plastic_bag\plastic_bag129.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>532</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plastic_bag</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>70</xmin>
+			<ymin>107</ymin>
+			<xmax>407</xmax>
+			<ymax>284</ymax>
+		</bndbox>
+	</object>
+</annotation>
