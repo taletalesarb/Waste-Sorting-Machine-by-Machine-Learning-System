@@ -1,0 +1,29 @@
+#Amount{
+    border-collapse: collapse;
+    position: relative;
+    float: right;
+    right: 2%;
+}
+
+#Amount tr, #Amount th{
+    border: 2px solid black;
+    padding: 2%;
+    width: 200px;
+}
+
+.one{
+    background-color: #125B4E;
+    color: blanchedalmond;
+}
+
+.two{
+    background-color: #0070C0;
+}
+
+.three{
+    background-color: #F3DC5F;
+}
+
+.four{
+    background-color: #DD2D4D;
+}
