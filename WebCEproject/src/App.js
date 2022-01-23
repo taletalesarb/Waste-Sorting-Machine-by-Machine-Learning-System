@@ -13,9 +13,9 @@ function App() {
     <div className="App">
       <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"></link>
       <Header />
-      <Table />
+      {/* <Table /> */}
       <Date />
-      {/* <Graph /> */}
+      <Graph />
       {/* <Select /> */}
     </div>
     
