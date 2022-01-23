@@ -1,0 +1,43 @@
+.container-select{
+    background-color: rgba(101, 126, 255, 0.56);
+    border-radius: 5px;
+    width:20%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+    top: 200px;
+    
+}
+
+.container-pic{ /*รูปภาพ*/
+    background-color: wheat;
+    height: 80px;
+    width: 80px;
+    
+}
+
+.container-text-button{
+    background-color: transparent;
+}
+
+.button-select{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(43, 86, 236, 0.59);
+    
+}
+
+.bar{
+    background-color: wheat;
+    height: 100px;
+    width: 80%;
+    position: relative;
+    top: 230px;
+    
+    
+}

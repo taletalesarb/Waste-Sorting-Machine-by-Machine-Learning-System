@@ -1,10 +1,14 @@
 *{
   margin: 0;
   padding: 0;
+  /* background-color: rgba(211, 239, 255, 1); */
+  font-family: 'Acme', sans-serif;
 }
+
 
 .App {
   text-align: center;
+  
 }
 
 .App-logo {

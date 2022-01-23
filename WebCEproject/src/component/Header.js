@@ -5,7 +5,7 @@ function Header(){
         <div>
             <div class="container1">
             <p class="header">
-            <img src = {require('../picture/bin.png')} width="30" height="30" />Waste Sorting Machine by Machine Learning System</p>
+            <img className="logo" src = {require('../picture/bin.png')} width="30" height="30" />Waste Sorting Machine by Machine Learning System</p>
             </div>
             <br/><br/>
         </div>

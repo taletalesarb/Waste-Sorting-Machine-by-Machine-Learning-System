@@ -1,3 +1,6 @@
+
+
+/*-----------------------table-------------------------*/
 #Amount{
     border-collapse: collapse;
     position: relative;
@@ -8,7 +11,7 @@
 #Amount tr, #Amount th{
     border: 2px solid black;
     padding: 2%;
-    width: 200px;
+    width: 45%;
 }
 
 .one{
@@ -27,3 +30,76 @@
 .four{
     background-color: #DD2D4D;
 }
+
+.typeWaste{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.typeWaste:hover{
+    color: white;
+    text-shadow: 0px 0px 5px white;
+}
+
+/*---------------------select-------------------------*/
+.container-select{
+    background-color: rgba(101, 126, 255, 0.56);
+    border-radius: 5px;
+    width: 22%;
+    height: 150px;
+
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+
+    position: relative;
+    /*top: 200px;*/
+    float: right;
+    right: -300px;
+    
+}
+
+.container-pic{ /*รูปภาพ*/
+    background-color: wheat;
+    height: 100px;
+    width: 100px;
+    
+}
+
+.container-text-button{
+    background-color: transparent;
+}
+
+.button-select1{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(43, 86, 236, 0.59);
+    cursor: pointer;
+    padding-right: 2px;
+}
+
+.button-select2{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(43, 86, 236, 0.59);
+    cursor: pointer;
+    margin-left: 15px;
+    padding-left: 2px;
+}
+
+/*----------------------bar-------------------------*/
+
+.bar{
+    background-color: rgba(70, 136, 234, 0.4);
+    height: 100px;
+    width: 90%;
+    position: relative;
+    float:right;
+    right: 2%;
+    
+}
+
