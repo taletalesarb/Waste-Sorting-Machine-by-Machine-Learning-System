@@ -91,15 +91,5 @@
     padding-left: 2px;
 }
 
-/*----------------------bar-------------------------*/
 
-.bar{
-    background-color: rgba(70, 136, 234, 0.4);
-    height: 100px;
-    width: 90%;
-    position: relative;
-    float:right;
-    right: 2%;
-    
-}
 

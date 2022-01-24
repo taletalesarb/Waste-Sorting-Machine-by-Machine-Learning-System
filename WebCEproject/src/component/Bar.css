@@ -1,0 +1,22 @@
+/*----------------------bar-------------------------*/
+
+.bar{
+    background-color: rgba(70, 136, 234, 0.4);
+    height: 100px;
+    width: 90%;
+    position: relative;
+    float:right;
+    right: 2%;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+
+    padding-left: 2%;
+}

@@ -1,4 +1,5 @@
 import { useState } from "react/cjs/react.production.min";
+import Picwaste from "./Picwaste";
 import Select from "./Select";
 import "./Table.css";
 function Table() {
@@ -50,16 +51,8 @@ function Table() {
             <img src={require("../picture/right.png")} width="30" height="30" />
           </button>
           
-
         </div>
       </div>
-
-        {/*-----------------*/}
-
-      <div className="bar">
-        
-      </div>
-      
     
     </div>
     
