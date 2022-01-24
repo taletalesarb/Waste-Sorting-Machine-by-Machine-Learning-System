@@ -10,10 +10,10 @@ import {
 import { Animation } from '@devexpress/dx-react-chart';
 
 const data = [
-  { year: 'General', population: 2.525 },
-  { year: 'Recycle', population: 3.018 },
-  { year: 'Hazardous', population: 3.282 },
-  { year: 'Others', population: 1.440 },
+  { waste: 'General', percentage: 29 ,chartColor: 'red'},
+  { waste: 'Recycle', percentage: 26 ,chartColor: 'red'},
+  { waste: 'Hazardous', percentage: 30 ,chartColor: 'red'},
+  { waste: 'Others', percentage: 10 ,chartColor: 'red'},
 ];
 
 export default class Graph extends React.PureComponent {
@@ -27,6 +27,25 @@ export default class Graph extends React.PureComponent {
 
   render() {
     const { data: chartData } = this.state;
+    const colorPalette = {
+      General: "#354657",
+      Recycle: "#5597e2",
+      Hazardous: "#28A96C",
+      Others: "#d44401"
+    }
+    const getSeriesStyle = React.useCallback((series) => {
+      // Based off my chart bars
+      const colorPalette = {
+        series1: "#354657",
+        series2: "#5597e2",
+        series3: "#28A96C",
+        series4: "#d44401"
+      };
+  
+      return {
+        fill: colorPalette[series.label],
+      };
+    }, []);
 
     return (
       <Paper>
@@ -37,8 +56,9 @@ export default class Graph extends React.PureComponent {
           <ValueAxis max={4} />
 
           <BarSeries
-            valueField="population"
-            argumentField="year"
+            valueField="percentage"
+            argumentField="waste"
+            color={getSeriesStyle}
           />
           <Title text="Waste Sorted" />
           <Animation />
