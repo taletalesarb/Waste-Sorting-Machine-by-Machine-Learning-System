@@ -1,61 +1,63 @@
-import { useState } from "react/cjs/react.production.min";
-import Picwaste from "./Picwaste";
-import Select from "./Select";
+//import { useState } from "react/cjs/react.production.min";
+import { useState } from "react";
+// import Picwaste from "./PicGeneralWaste";
+import { GeneralWasteElements, RecycleWasteElements, HazardousWasteElements } from "./Bar";
+
 import "./Table.css";
+import Bar from "./Bar";
+import Select from "./Select";
+
+// let Showpic = GeneralWasteElements[0];
+
 function Table() {
 
-    let type = ["General Waste", "Recycle Waste", "Hazardous Waste"];
+    let typeOfWaste = ["General Waste", "Recycle Waste", "Hazardous Waste"];
 
-    function onTypeClick(name){
+    const [selectedType, setSelectedType] = useState("1");
+
+    function onTypeClick(name, num){
         document.getElementById("TypeWaste").innerHTML = name;
+        setSelectedType(num);
     }
+    
+    let Showbar = <Bar type = "1" />
+    let Showpic = <Select type = "1" />
 
+    if(!!selectedType){
+      Showbar = <Bar type = {selectedType} />
+      Showpic = <Select type = {selectedType} />
+    }
+    
   return (
 
-    <div>
+    <div className="position">
+      <p>
       <table id="Amount">
         <tr>
           <th className="one"></th>
           <th className="one">Amount of waste (pieces)</th>
         </tr>
         <tr>
-          <th className="two"><button className="typeWaste" onClick={() => onTypeClick('General Waste')}>{type[0]}</button></th>
-          <th className="two"></th>
+          <th className="two"><button className="typeWaste" onClick={() => onTypeClick('General Waste','1')}>{typeOfWaste[0]}</button></th>
+          <th className="two">{GeneralWasteElements.length}</th>
         </tr>
         <tr>
-          <th className="three"><button className="typeWaste" onClick={() => onTypeClick('Recycle Waste')}>{type[1]}</button></th>
-          <th className="three"></th>
+          <th className="three"><button className="typeWaste" onClick={() => onTypeClick('Recycle Waste','2')}>{typeOfWaste[1]}</button></th>
+          <th className="three">{RecycleWasteElements.length}</th>
         </tr>
         <tr>
-          <th className="four"><button className="typeWaste" onClick={() => onTypeClick('Hazardous Waste')}>{type[2]}</button></th>
-          <th className="four"></th>
+          <th className="four"><button className="typeWaste" onClick={() => onTypeClick('Hazardous Waste','3')}>{typeOfWaste[2]}</button></th>
+          <th className="four">{HazardousWasteElements.length}</th>
         </tr>
       </table>
+      </p>
         
-        {/*-----------------*/}
+        <p>{Showpic}</p>
         
-      <div className="container-select">
-        <div className="container-pic"></div>
+        <p>{Showbar}</p>
 
-        <div className="container-text-button">
-
-          <p id="TypeWaste">General Waste</p>
-          <br/>
-
-          
-          <button className="button-select1">
-            <img src={require("../picture/left.png")} width="30" height="30" />
-          </button>
-          
-          <button className="button-select2">
-            <img src={require("../picture/right.png")} width="30" height="30" />
-          </button>
-          
-        </div>
-      </div>
-    
     </div>
     
   );
-}
+  }
 export default Table;
