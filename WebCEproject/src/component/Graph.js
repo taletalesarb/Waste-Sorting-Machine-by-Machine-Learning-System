@@ -10,10 +10,10 @@ import {
 import { Animation } from '@devexpress/dx-react-chart';
 
 const data = [
-  { waste: 'General', percentage: 29 ,chartColor: 'red'},
-  { waste: 'Recycle', percentage: 26 ,chartColor: 'red'},
-  { waste: 'Hazardous', percentage: 30 ,chartColor: 'red'},
-  { waste: 'Others', percentage: 10 ,chartColor: 'red'},
+  { waste: 'General', percentage: 29 ,chartColor: '#354657'},
+  { waste: 'Recycle', percentage: 26 ,chartColor: '#354657'},
+  { waste: 'Hazardous', percentage: 30 ,chartColor: '#354657'},
+  { waste: 'Others', percentage: 10 ,chartColor: '#354657'},
 ];
 
 export default class Graph extends React.PureComponent {
@@ -27,38 +27,26 @@ export default class Graph extends React.PureComponent {
 
   render() {
     const { data: chartData } = this.state;
-    const colorPalette = {
-      General: "#354657",
-      Recycle: "#5597e2",
-      Hazardous: "#28A96C",
-      Others: "#d44401"
-    }
-    const getSeriesStyle = React.useCallback((series) => {
-      // Based off my chart bars
-      const colorPalette = {
-        series1: "#354657",
-        series2: "#5597e2",
-        series3: "#28A96C",
-        series4: "#d44401"
-      };
-  
-      return {
-        fill: colorPalette[series.label],
-      };
-    }, []);
+    const colorPalette = [
+      "#354657",
+      "#5597e2",
+      "#28A96C",
+      "#d44401"
+    ]
 
     return (
       <Paper>
         <Chart
           data={chartData}
+          colorType="literal"
         >
           <ArgumentAxis />
           <ValueAxis max={4} />
-
+          
           <BarSeries
             valueField="percentage"
             argumentField="waste"
-            color={getSeriesStyle}
+            color= {this.state.data.chartColor}
           />
           <Title text="Waste Sorted" />
           <Animation />
