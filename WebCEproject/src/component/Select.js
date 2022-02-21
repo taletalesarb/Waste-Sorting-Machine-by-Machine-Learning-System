@@ -78,7 +78,7 @@ function Select(props) {
 
           <button className="button-select1" onClick={() => plusSlides(-1)}>
             <img src={require("../picture/left.png")} width="30" height="30" />
-            <p>{slideIndex}</p>
+            {/* <p>{slideIndex}</p> */}
           </button>
 
           <button className="button-select2" onClick={() => plusSlides(1)}>

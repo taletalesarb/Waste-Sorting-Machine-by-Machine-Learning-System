@@ -1,6 +1,7 @@
 /*-----------------------table-------------------------*/
 #Amount{
     border-collapse: collapse;
+    /* position: relative; */
     position: relative;
     float: right;
     right: 2%;
@@ -42,6 +43,11 @@
 
 .position{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;  */
     
+}
+
+.positionX{
+    display: flex;
+    flex-direction: column;
 }

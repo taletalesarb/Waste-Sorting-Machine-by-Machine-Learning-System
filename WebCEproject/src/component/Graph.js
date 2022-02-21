@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Paper from '@material-ui/core/Paper';
+import "./Graph.css";
 import {
   Chart,
   BarSeries,
@@ -10,16 +11,13 @@ import {
 import { Animation } from '@devexpress/dx-react-chart';
 
 const data = [
-  { year: '1950', population: 2.525 },
-  { year: '1960', population: 3.018 },
-  { year: '1970', population: 3.682 },
-  { year: '1980', population: 4.440 },
-  { year: '1990', population: 5.310 },
-  { year: '2000', population: 6.127 },
-  { year: '2010', population: 6.930 },
+  { waste: 'General', percentage: 29 ,chartColor: '#354657'},
+  { waste: 'Recycle', percentage: 26 ,chartColor: '#354657'},
+  { waste: 'Hazardous', percentage: 30 ,chartColor: '#354657'},
+  { waste: 'Others', percentage: 10 ,chartColor: '#354657'},
 ];
 
-export default class Demo extends React.PureComponent {
+export default class Graph extends React.PureComponent {
   constructor(props) {
     super(props);
 
@@ -30,20 +28,30 @@ export default class Demo extends React.PureComponent {
 
   render() {
     const { data: chartData } = this.state;
+    const colorPalette = [
+      "#354657",
+      "#5597e2",
+      "#28A96C",
+      "#d44401"
+    ]
 
     return (
-      <Paper>
+      <Paper className="ChartPo">
         <Chart
           data={chartData}
+          colorType="literal"
+          
         >
           <ArgumentAxis />
-          <ValueAxis max={7} />
-
+          <ValueAxis max={4} />
+          
           <BarSeries
-            valueField="population"
-            argumentField="year"
+            valueField="percentage"
+            argumentField="waste"
+            color= {this.state.data.chartColor}
+            
           />
-          <Title text="World population" />
+          <Title text="Waste Sorted" />
           <Animation />
         </Chart>
       </Paper>

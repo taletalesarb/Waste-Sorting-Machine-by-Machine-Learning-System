@@ -7,7 +7,13 @@ import "./Table.css";
 import Bar from "./Bar";
 import Select from "./Select";
 
+import Graph from "./Graph";
+
 // let Showpic = GeneralWasteElements[0];
+// let Showbar = <Bar type = "1" />
+
+
+
 
 function Table() {
 
@@ -30,9 +36,15 @@ function Table() {
     
   return (
 
-    <div className="position">
-      <p>
-      <table id="Amount">
+    <div>
+    
+      
+      
+      
+      <div className="positionX">
+      <p><Graph />
+      
+      <table id="Amount" >
         <tr>
           <th className="one"></th>
           <th className="one">Amount of waste (pieces)</th>
@@ -53,11 +65,15 @@ function Table() {
       </p>
         
         <p>{Showpic}</p>
+
+
         
         <p>{Showbar}</p>
+      </div>  
 
     </div>
     
   );
   }
 export default Table;
+
