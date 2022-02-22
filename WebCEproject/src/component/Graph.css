@@ -1,5 +1,4 @@
-.ChartPo{
-    width:500px;
-    max-height: 500px;
-    /* position: relative; */
+.PaperSize{
+    width: 600px;
+    height: 100%;
 }

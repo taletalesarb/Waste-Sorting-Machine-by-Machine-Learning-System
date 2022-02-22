@@ -16,9 +16,11 @@ function App() {
         href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
         rel="stylesheet"
       ></link>
+
       <Header />
       <Table />
       
+      {/* <Bar /> */}
       
     </div>
   );

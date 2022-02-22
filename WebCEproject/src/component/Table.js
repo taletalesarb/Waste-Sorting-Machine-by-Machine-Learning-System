@@ -9,11 +9,7 @@ import Select from "./Select";
 
 import Graph from "./Graph";
 
-// let Showpic = GeneralWasteElements[0];
 // let Showbar = <Bar type = "1" />
-
-
-
 
 function Table() {
 
@@ -37,13 +33,12 @@ function Table() {
   return (
 
     <div>
-    
-      
-      
-      
+
       <div className="positionX">
-      <p><Graph />
-      
+
+      <p><Graph /></p>
+
+      <p>
       <table id="Amount" >
         <tr>
           <th className="one"></th>
@@ -62,14 +57,13 @@ function Table() {
           <th className="four">{HazardousWasteElements.length}</th>
         </tr>
       </table>
-      </p>
+      
+        {Showpic}</p>
         
-        <p>{Showpic}</p>
-
-
-        
-        <p>{Showbar}</p>
       </div>  
+
+        <p>{Showbar}</p>
+        
 
     </div>
     

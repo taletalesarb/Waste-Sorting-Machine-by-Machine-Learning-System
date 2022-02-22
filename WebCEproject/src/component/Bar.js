@@ -25,20 +25,7 @@ function Bar(props){
     
     const {type} = props;
 
-    // const GeneralWasteElements = PictureGeneralWaste.map((GeneralWaste, index) => {
-    //     return <PicGeneralWaste key={index} GeneralWaste={GeneralWaste} />;
-    // });
-      
-    // const RecycleWasteElements = PictureRecycleWaste.map((RecycleWaste, index) => {
-    //     return <PicRecycleWaste key={index} RecycleWaste={RecycleWaste} />;
-    // });
-
-    // const HazardousWasteElements = PictureHazardousWaste.map((HazardousWaste, index) => {
-    //     return <PicHazardousWaste key={index} HazardousWaste={HazardousWaste} />;
-    // });
-    
-    
-    if(type=="1"){
+    if(type==="1"){
       return(
         <div className="barg">
             <div className="flex">
@@ -48,7 +35,7 @@ function Bar(props){
     );
     }
 
-    else if(type=="2"){
+    else if(type==="2"){
         return(
           <div className="barr">
               <div className="flex">

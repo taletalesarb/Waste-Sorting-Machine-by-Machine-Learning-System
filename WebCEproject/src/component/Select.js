@@ -27,6 +27,9 @@ let TypeWasteElements = GeneralWasteElements;
 
 let slideIndex = 0;
 
+let borderPic;
+
+
 function Select(props) {
   const { type } = props;
 
@@ -38,12 +41,15 @@ function Select(props) {
   
   if(type==="1"){
     TypeWasteElements = GeneralWasteElements;
+    borderPic = "containerPicBlue";
   }
   else if(type==="2"){
     TypeWasteElements = RecycleWasteElements;
+    borderPic = "containerPicYellow";
   }
   else{
     TypeWasteElements = HazardousWasteElements;
+    borderPic = "containerPicRed";
   }
 
   /*-----------------------------------------------*/
@@ -66,11 +72,9 @@ function Select(props) {
   return (
     <div>
       <div className="container-select">
-        <div className="container-pic">
+        <div className={borderPic}>
           {Show}
         </div>
-
-        
 
         <div className="container-text-button">
           <p id="TypeWaste">General Waste</p>

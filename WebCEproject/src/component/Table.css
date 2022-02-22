@@ -3,14 +3,15 @@
     border-collapse: collapse;
     /* position: relative; */
     position: relative;
-    float: right;
-    right: 2%;
+    /* float: right; */
+    /* right: 10%; */
+    width: 400px;
 }
 
 #Amount tr, #Amount th{
     border: 2px solid black;
     padding: 2%;
-    width: 45%;
+    width: 50%;
 }
 
 .one{
@@ -44,10 +45,12 @@
 .position{
     display: flex;
     /* flex-direction: column;  */
-    
 }
 
 .positionX{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    -webkit-align-items: stretch; 
+    align-items: stretch; 
+    justify-content: space-around;
 }

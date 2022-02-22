@@ -36,10 +36,13 @@ export default class Graph extends React.PureComponent {
     ]
 
     return (
-      <Paper className="ChartPo">
+      <Paper className="PaperSize">
+      
         <Chart
           data={chartData}
           colorType="literal"
+          height={300}
+          width={600}
           
         >
           <ArgumentAxis />

@@ -1,24 +1,35 @@
 .container-select {
-  background-color: rgba(101, 126, 255, 0.56);
+  background-color: rgba(149,175,255);
   border-radius: 5px;
-  width: 22%;
+  width: 80%;
   height: 150px;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  /* position: relative; */
   position: relative;
   top: 30px;
-  float: right;
+  left: 10%;
+
   /* right: -300px; */
-  right: 2%;
+  /* right: 2%; */
 }
 
-.container-pic {
-  /*รูปภาพ*/
-  background-color: wheat;
+.containerPicBlue {
+  background-color: #0070C0;
+  height: 120px;
+  width: 120px; 
+}
+
+.containerPicYellow {
+  background-color: #F3DC5F;
+  height: 120px;
+  width: 120px; 
+}
+
+.containerPicRed {
+  background-color: #DD2D4D;
   height: 120px;
   width: 120px; 
 }
@@ -34,6 +45,11 @@
   background-color: rgba(43, 86, 236, 0.59);
   cursor: pointer;
   padding-right: 2px;
+  border: none;
+}
+
+.button-select1:hover{
+  background-color: rgba(2, 47, 211, 0.59);
 }
 
 .button-select2 {
@@ -44,4 +60,9 @@
   cursor: pointer;
   margin-left: 15px;
   padding-left: 2px;
+  border: none;
+}
+
+.button-select2:hover{
+  background-color: rgba(2, 47, 211, 0.59);
 }

@@ -1,16 +1,14 @@
 /*----------------------bar-------------------------*/
 
 .barg{
-  background-color: rgba(70, 136, 234, 0.4);
+  background-color: rgba(191,227,254);
   height: 120px;
   width: 90%;
   position: relative;
   float: right;
   right: 2%;
   top: 50px;
-
-  /* display: flex; */
-  /*align-items: center; */
+  
   overflow-x: scroll; 
 }
 

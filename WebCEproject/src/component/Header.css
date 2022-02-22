@@ -1,6 +1,8 @@
 .container1{
-    background-color: rgba(70, 136, 234, 0.4);
+    background-color: rgba(155,198,247);
     height: 55px;
+    width: 100%;
+    position: relative;
 }
 
 .header{
