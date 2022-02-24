@@ -3,11 +3,11 @@ import "./App.css";
 import Header from "./component/Header";
 import Table from "./component/Table";
 import Select from "./component/Select";
-import PicGeneralWaste from "./component/PicGeneralWaste";
+
 import Bar from "./component/Bar";
 
 import Graph from "./component/Graph";
-//import MaterialUIPickers from "./component/Date";
+import MaterialUIPickers from "./component/Date";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <Header />
       <Table />
       
-      {/* <Bar /> */}
+      {/* <MaterialUIPickers/> */}
       
     </div>
   );

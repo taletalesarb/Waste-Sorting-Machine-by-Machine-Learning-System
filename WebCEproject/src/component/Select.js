@@ -77,7 +77,7 @@ function Select(props) {
         </div>
 
         <div className="container-text-button">
-          <p id="TypeWaste">General Waste</p>
+          <p id="TypeWaste" className="Text">General Waste</p>
           <br />
 
           <button className="button-select1" onClick={() => plusSlides(-1)}>

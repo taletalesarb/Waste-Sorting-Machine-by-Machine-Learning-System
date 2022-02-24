@@ -18,18 +18,21 @@
 
 .containerPicBlue {
   background-color: #0070C0;
+  border-radius: 5px;
   height: 120px;
   width: 120px; 
 }
 
 .containerPicYellow {
   background-color: #F3DC5F;
+  border-radius: 5px;
   height: 120px;
   width: 120px; 
 }
 
 .containerPicRed {
   background-color: #DD2D4D;
+  border-radius: 5px;
   height: 120px;
   width: 120px; 
 }
@@ -45,6 +48,7 @@
   background-color: rgba(43, 86, 236, 0.59);
   cursor: pointer;
   padding-right: 2px;
+  padding-top: 3px;
   border: none;
 }
 
@@ -60,9 +64,14 @@
   cursor: pointer;
   margin-left: 15px;
   padding-left: 2px;
+  padding-top: 3px;
   border: none;
 }
 
 .button-select2:hover{
   background-color: rgba(2, 47, 211, 0.59);
+}
+
+.Text{
+  font-size: 18px;
 }

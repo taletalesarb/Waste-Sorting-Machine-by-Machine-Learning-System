@@ -27,6 +27,7 @@ function Bar(props){
 
     if(type==="1"){
       return(
+          
         <div className="barg">
             <div className="flex">
                 {GeneralWasteElements}

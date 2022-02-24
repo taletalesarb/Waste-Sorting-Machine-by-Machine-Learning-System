@@ -4,7 +4,7 @@ import "./Picwaste.css";
 
 function PicGeneralWaste(props) {
   const { GeneralWaste, size } = props;
-  if (size == "small") {
+  if (size === "small") {
     return (
       <div>
         <div className="picwaste">
@@ -13,10 +13,10 @@ function PicGeneralWaste(props) {
         </div>
       </div>
     );
-  } else if (size == "zoom") {
+  } else if (size === "zoom") {
     return (
       <div>
-        <div className="picwaste">
+        <div className="picwasteZoom">
           {/* <p>{GeneralWaste.name}</p> */}
           <img src={GeneralWaste.picUrl} width="100px" height="100px" />
         </div>
