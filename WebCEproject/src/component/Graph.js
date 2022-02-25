@@ -6,9 +6,10 @@ import {
   BarSeries,
   Title,
   ArgumentAxis,
-  ValueAxis,
+  ValueAxis
 } from '@devexpress/dx-react-chart-material-ui';
 import { Animation } from '@devexpress/dx-react-chart';
+
 
 const data = [
   { waste: 'General', percentage: 29 ,chartColor: '#354657'},
@@ -45,6 +46,7 @@ export default class Graph extends React.PureComponent {
           width={600}
           
         >
+          
           <ArgumentAxis />
           <ValueAxis max={4} />
           
@@ -53,6 +55,7 @@ export default class Graph extends React.PureComponent {
             argumentField="waste"
             color= {this.state.data.chartColor}
             
+                                  
           />
           <Title text="Waste Sorted" />
           <Animation />

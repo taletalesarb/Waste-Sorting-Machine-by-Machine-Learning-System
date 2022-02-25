@@ -7,7 +7,8 @@ import Select from "./component/Select";
 import Bar from "./component/Bar";
 
 import Graph from "./component/Graph";
-import MaterialUIPickers from "./component/Date";
+import Date from "./component/Date";
+
 
 function App() {
   return (
@@ -18,12 +19,11 @@ function App() {
       ></link>
 
       <Header />
+      {/* <Date /> */}
       <Table />
-      
-      {/* <MaterialUIPickers/> */}
-      
     </div>
   );
 }
 
 export default App;
+
