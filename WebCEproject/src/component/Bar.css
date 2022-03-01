@@ -4,20 +4,26 @@
   background-color: rgba(191,227,254);
   
   height: 120px;
-  width: 90%;
+  width: 70%;
   position: relative;
-  float: right;
-  right: 2%;
-  top: 50px;
-  border-radius: 5px;
+  /* float: right;
+  right: 2%; */
   
+  /* top: 50px; */
+  border-radius: 5px;
+  /* cursor: pointer; */
   overflow-x: scroll; 
+  left: 50%;
+  transform: translateX(-50%);
+
 }
+
 
 /* width */
 .barg::-webkit-scrollbar {
   /* width: 10px; */
   height: 20px;
+  
 }
 
 /* Track */
@@ -32,6 +38,8 @@
   border-radius: 10px;
   border: 5px solid transparent;
   background-clip: content-box;
+  
+  
 }
 
 /* Handle on hover */
@@ -39,6 +47,7 @@
   background: #00477a;
   border: 5px solid transparent;
   background-clip: content-box;
+  
 } */
 
 /*-----------------------------------------------------------------------*/
@@ -46,15 +55,17 @@
 .barr{
   background-color: rgb(245, 237, 191);
   height: 120px;
-  width: 90%;
+  width: 70%;
   position: relative;
-  float: right;
-  right: 2%;
-  top: 50px;
+  /* float: right;
+  right: 2%; */
+  /* top: 50px; */
   /* display: flex; */
   /*align-items: center; */
   border-radius: 5px;
   overflow-x: scroll; 
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* width */
@@ -82,16 +93,18 @@
 .barh{
   background-color: #f1bdc6;
   height: 120px;
-  width: 90%;
+  width: 70%;
   position: relative;
-  float: right;
-  right: 2%;
-  top: 50px;
+  /* float: right;
+  right: 2%; */
+  /* top: 50px; */
   border-radius: 5px;
 
   /* display: flex; */
   /*align-items: center; */
   overflow-x: scroll; 
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* width */
@@ -119,3 +132,4 @@
 .flex{
   display: flex;
 }
+

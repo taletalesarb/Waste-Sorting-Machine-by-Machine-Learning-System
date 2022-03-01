@@ -22,11 +22,11 @@ function Table() {
         setSelectedType(num);
     }
     
-    let Showbar = <Bar type = "1" />
+    //let Showbar = <Bar type = "1"/>
     let Showpic = <Select type = "1" />
 
     if(!!selectedType){
-      Showbar = <Bar type = {selectedType} />
+      //Showbar = <Bar type = {selectedType} />
       Showpic = <Select type = {selectedType} />
     }
     
@@ -35,10 +35,11 @@ function Table() {
     <div>
 
       <div className="positionX">
-
-      <p><Graph /></p>
-
-      <p>
+      
+      <p className="item1"><Graph /></p>
+      
+      
+      <p className="item2">
       <table id="Amount" >
         <tr>
           <th className="one"></th>
@@ -57,12 +58,16 @@ function Table() {
           <th className="four">{HazardousWasteElements.length}</th>
         </tr>
       </table>
-      
-        {Showpic}</p>
-        
-      </div>  
+      </p>
 
-        <p>{Showbar}</p>
+     
+      
+      <p className="break"></p>
+      <p className="item3">{Showpic}</p>  
+              
+      </div>   
+
+        {/* <p>{Showbar}</p> */}
         
 
     </div>

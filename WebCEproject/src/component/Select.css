@@ -1,7 +1,7 @@
 .container-select {
   background-color: rgba(149,175,255);
   border-radius: 5px;
-  width: 80%;
+  width: 25%;
   height: 150px;
 
   display: flex;
@@ -9,11 +9,16 @@
   align-items: center;
 
   position: relative;
-  top: 30px;
-  left: 10%;
+  top: -50px;
+  
+  /* float: right; */
+  left: 60%;
+  /* right: 2%; */
 
   /* right: -300px; */
   /* right: 2%; */
+  user-select: none;
+  
 }
 
 .containerPicBlue {

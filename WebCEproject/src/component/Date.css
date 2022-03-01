@@ -1,5 +1,13 @@
-#date{
+
+#selectDate{
     background-color: #fdb5d7;
-    height: 14px;
+    /* height: 50px; */
+    width: 180px;
     
 }
+#date{
+    height: 12px;
+    font-family: 'Acme', sans-serif;
+    color-scheme: #ddfddd;
+}
+

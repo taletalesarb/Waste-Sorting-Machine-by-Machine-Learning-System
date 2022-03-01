@@ -1,4 +1,9 @@
 import './Picwaste.css'
+import PictureRecycleWaste from '../data/PictureRecycleWaste';
+
+export const RecycleWasteElementsHighlight = PictureRecycleWaste.map((RecycleWaste, index) => {
+  return <PicRecycleWaste key={index} RecycleWaste={RecycleWaste} size="highlight"/>;
+});
 
 function PicRecycleWaste(props){
     
@@ -18,6 +23,16 @@ function PicRecycleWaste(props){
             <div className="picwasteZoom">
               {/* <p>{GeneralWaste.name}</p> */}
               <img src={RecycleWaste.picUrl} width="100px" height="100px" />
+            </div>
+          </div>
+        );
+      }
+      else if (size === "highlight") {
+        return (
+          <div>
+            <div className="picwasteHighlight">
+              {/* <p>{GeneralWaste.name}</p> */}
+              <img src={RecycleWaste.picUrl} width="80px" height="80px" />
             </div>
           </div>
         );

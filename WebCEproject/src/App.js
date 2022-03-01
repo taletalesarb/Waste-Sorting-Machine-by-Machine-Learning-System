@@ -8,6 +8,7 @@ import Bar from "./component/Bar";
 
 import Graph from "./component/Graph";
 import Date from "./component/Date";
+import MaterialUIPickers from "./component/Date";
 
 
 function App() {
@@ -17,10 +18,12 @@ function App() {
         href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
         rel="stylesheet"
       ></link>
-
+      
       <Header />
-      {/* <Date /> */}
+      {/* <Graph/> */}
+      
       <Table />
+      {/* <MaterialUIPickers /> */}
     </div>
   );
 }

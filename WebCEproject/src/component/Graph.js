@@ -13,7 +13,7 @@ import { Animation } from '@devexpress/dx-react-chart';
 
 const data = [
   { waste: 'General', percentage: 29 ,chartColor: '#354657'},
-  { waste: 'Recycle', percentage: 26 ,chartColor: '#354657'},
+  { waste: 'Recycle', percentage: 26 ,chartColor: '#5597e2'},
   { waste: 'Hazardous', percentage: 30 ,chartColor: '#354657'},
   { waste: 'Others', percentage: 10 ,chartColor: '#354657'},
 ];
@@ -54,6 +54,7 @@ export default class Graph extends React.PureComponent {
             valueField="percentage"
             argumentField="waste"
             color= {this.state.data.chartColor}
+            
             
                                   
           />
