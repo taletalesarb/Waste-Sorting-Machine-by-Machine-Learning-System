@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .header{
@@ -15,7 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: center; 
-    
 }
 
 .logo{

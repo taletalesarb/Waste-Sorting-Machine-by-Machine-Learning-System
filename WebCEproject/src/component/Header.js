@@ -15,7 +15,6 @@ function Header(){
                 <p><Date /></p>
             
             </div>
-            <br/><br/>
         </div>
     );
 }

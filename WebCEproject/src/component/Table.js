@@ -2,11 +2,9 @@
 import { useState } from "react";
 // import Picwaste from "./PicGeneralWaste";
 import { GeneralWasteElements, RecycleWasteElements, HazardousWasteElements } from "./Bar";
-
 import "./Table.css";
 import Bar from "./Bar";
 import Select from "./Select";
-
 import Graph from "./Graph";
 
 // let Showbar = <Bar type = "1" />
@@ -33,7 +31,6 @@ function Table() {
   return (
 
     <div>
-
       <div className="positionX">
       
       <p className="item1"><Graph /></p>
@@ -60,18 +57,16 @@ function Table() {
       </table>
       </p>
 
-     
-      
       <p className="break"></p>
-      <p className="item3">{Showpic}</p>  
-              
-      </div>   
+
+      <p className="item3">{Showpic}</p>
+      </div>
+      
+         
 
         {/* <p>{Showbar}</p> */}
-        
 
     </div>
-    
   );
   }
 export default Table;

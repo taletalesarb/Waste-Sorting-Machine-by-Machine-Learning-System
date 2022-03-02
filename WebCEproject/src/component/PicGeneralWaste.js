@@ -18,7 +18,7 @@ function PicGeneralWaste(props) {
       <div>
         <div className="picwaste">
           {/* <p>{GeneralWaste.name}</p> */}
-          <img src={GeneralWaste.picUrl} width="80px" height="80px" />
+          <img src={GeneralWaste.picUrl} width="60px" height="60px" />
         </div>
       </div>
     );
@@ -36,7 +36,7 @@ function PicGeneralWaste(props) {
       <div>
         <div className="picwasteHighlight">
           {/* <p>{GeneralWaste.name}</p> */}
-          <img src={GeneralWaste.picUrl} width="80px" height="80px" />
+          <img src={GeneralWaste.picUrl} width="60px" height="60px" />
         </div>
       </div>
     );

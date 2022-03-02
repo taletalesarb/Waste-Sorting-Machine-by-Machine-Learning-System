@@ -15,7 +15,6 @@ import { GeneralWasteElements } from "./Bar";
 import Table from "./Table";
 import Graph from "./Graph";
 
-
 export const GeneralWasteElementsZoom = PictureGeneralWaste.map((GeneralWaste, index) => {
   return <PicGeneralWaste key={index} GeneralWaste={GeneralWaste} size="zoom"/>;
 });
@@ -28,13 +27,11 @@ export const HazardousWasteElementsZoom = PictureHazardousWaste.map((HazardousWa
   return <PicHazardousWaste key={index} HazardousWaste={HazardousWaste} size="zoom"/>;
 });
 
-
 let TypeWasteElements = GeneralWasteElementsZoom;
 
 let slideIndex = 0;
 
 let borderPic;
-
 
 function Select(props) {
   const { type } = props;
@@ -74,12 +71,11 @@ function Select(props) {
 
     setSelectedIndex(slideIndex);
     //document.getElementById("indexZoom").value=slideIndex;
-    
   }
   
   return (
     <div>
-      
+      <div className="positionSB">
       <div className="container-select">
         <div className={borderPic}>
           {Show}
@@ -92,8 +88,6 @@ function Select(props) {
           <button className="button-select1" onClick={() => plusSlides(-1)}> 
             <img src={require("../picture/left.png")} width="30" height="30" />
             <p>{selectedIndex}</p>
-            
-            
           </button>
 
           <button className="button-select2" onClick={() => plusSlides(1)}>
@@ -102,10 +96,9 @@ function Select(props) {
         </div>
       </div>
 
-      
-
     <p><Bar type={type} ind={slideIndex}/></p>
 
+    </div>
     </div>
   );
  

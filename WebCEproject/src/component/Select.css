@@ -9,15 +9,16 @@
   align-items: center;
 
   position: relative;
-  top: -50px;
   
-  /* float: right; */
-  left: 60%;
-  /* right: 2%; */
+  /* top: -50px;  */
+  left: 68%;
+  user-select: none;
 
+
+  /* right: 2%; */
+  /* float: right; */
   /* right: -300px; */
   /* right: 2%; */
-  user-select: none;
   
 }
 
@@ -74,9 +75,16 @@
 }
 
 .button-select2:hover{
-  background-color: rgba(2, 47, 211, 0.59);
+  background-color: rgba(15, 15, 15, 0.59);
 }
 
 .Text{
   font-size: 18px;
+}
+
+.positionSB{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #F3DC5F; */
+  
 }

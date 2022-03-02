@@ -42,7 +42,7 @@ export default class Graph extends React.PureComponent {
         <Chart
           data={chartData}
           colorType="literal"
-          height={300}
+          height={270}
           width={600}
           
         >
