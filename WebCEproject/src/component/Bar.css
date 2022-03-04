@@ -2,28 +2,22 @@
 
 .barg{
   background-color: rgba(191,227,254);
-  /* height: 180px; */
-  /* height: 15vh; */
   height: fit-content;
   width: 100%;
-  max-width: 200vh;
-  position: relative;
-  /* float: right;
-  right: 2%; */
-  
+  /* max-width: 200vh; */
   border-radius: 5px;
+
+  position: relative;
+  top: 5vh;
   
   overflow-x: scroll; 
   left: 50%;
   transform: translateX(-50%);
 }
 
-
 /* width */
 .barg::-webkit-scrollbar {
-  /* width: 10px; */
   height: 20px;
-  
 }
 
 /* Track */
@@ -40,14 +34,6 @@
   background-clip: content-box;
 }
 
-/* Handle on hover */
-/* .barg::-webkit-scrollbar-thumb:hover {
-  background: #00477a;
-  border: 5px solid transparent;
-  background-clip: content-box;
-  
-} */
-
 /*-----------------------------------------------------------------------*/
 
 .barr{
@@ -55,13 +41,15 @@
   /* height: 120px; */
   height: fit-content;
   width: 100%;
-  max-width: 200vh;
-  position: relative;
+  /* max-width: 200vh; */
+  /* position: relative; */
   /* float: right;
   right: 2%; */
   /* top: 50px; */
   /* display: flex; */
   /*align-items: center; */
+  position: relative;
+  top: 5vh;
   border-radius: 5px;
   overflow-x: scroll; 
   left: 50%;
@@ -95,15 +83,9 @@
   /* height: 120px; */
   height: fit-content;
   width: 100%;
-  max-width: 200vh;
-  position: relative;
-  /* float: right;
-  right: 2%; */
-  /* top: 50px; */
   border-radius: 5px;
-
-  /* display: flex; */
-  /*align-items: center; */
+  position: relative;
+  top: 5vh;
   overflow-x: scroll; 
   left: 50%;
   transform: translateX(-50%);

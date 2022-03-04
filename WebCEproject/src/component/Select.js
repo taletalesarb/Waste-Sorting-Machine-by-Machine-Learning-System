@@ -75,7 +75,7 @@ function Select(props) {
   
   return (
     <div>
-      <div className="positionSB">
+      
       <div className="container-select">
         <div className={borderPic}>
           {Show}
@@ -87,7 +87,7 @@ function Select(props) {
 
           <button className="button-select1" onClick={() => plusSlides(-1)}> 
             <img src={require("../picture/left.png")} width="30" height="30" />
-            <p>{selectedIndex}</p>
+            {/* <p>{selectedIndex}</p> */}
           </button>
 
           <button className="button-select2" onClick={() => plusSlides(1)}>
@@ -96,9 +96,9 @@ function Select(props) {
         </div>
       </div>
 
-    <p><Bar type={type} ind={slideIndex}/></p>
+      <p className="break"></p>
+      <p><Bar type={type} ind={slideIndex}/></p>
 
-    </div>
     </div>
   );
  

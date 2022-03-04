@@ -22,7 +22,7 @@ function PicHazardousWaste(props){
           <div>
             <div className="picwasteZoom">
               {/* <p>{GeneralWaste.name}</p> */}
-              <img src={HazardousWaste.picUrl} width="100px" height="100px" />
+              <img className="respic" src={HazardousWaste.picUrl} width="100px" height="100px" />
             </div>
           </div>
         );
