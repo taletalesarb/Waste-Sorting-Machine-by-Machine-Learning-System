@@ -35,7 +35,6 @@ function Table() {
       
       <p className="item1"><Graph /></p>
       
-      
       <p className="item2">
       <table id="Amount" >
         <tr>
@@ -61,8 +60,6 @@ function Table() {
 
       <p className="item3">{Showpic}</p>
       </div>
-      
-         
 
         {/* <p>{Showbar}</p> */}
 
