@@ -11,10 +11,6 @@ import PicHazardousWaste from './PicHazardousWaste';
 import PictureHazardousWaste from '../data/PictureHazardousWaste';
 import Bar from "./Bar";
 
-import { GeneralWasteElements } from "./Bar";
-import Table from "./Table";
-import Graph from "./Graph";
-
 export const GeneralWasteElementsZoom = PictureGeneralWaste.map((GeneralWaste, index) => {
   return <PicGeneralWaste key={index} GeneralWaste={GeneralWaste} size="zoom"/>;
 });
@@ -27,14 +23,14 @@ export const HazardousWasteElementsZoom = PictureHazardousWaste.map((HazardousWa
   return <PicHazardousWaste key={index} HazardousWaste={HazardousWaste} size="zoom"/>;
 });
 
-let TypeWasteElements = GeneralWasteElementsZoom;
 
+let TypeWasteElements=GeneralWasteElementsZoom;
 let slideIndex = 0;
 
 let borderPic;
 
 function Select(props) {
-  const { type } = props;
+  const { type , GeneralWasteElements , RecycleWasteElements , HazardousWasteElements, GZ , RZ , HZ , GH , RH , HH} = props;
   
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -44,15 +40,15 @@ function Select(props) {
   
   
   if(type==="1"){
-    TypeWasteElements = GeneralWasteElementsZoom;
+    TypeWasteElements = GZ;
     borderPic = "containerPicBlue";
   }
   else if(type==="2"){
-    TypeWasteElements = RecycleWasteElementsZoom;
+    TypeWasteElements = RZ;
     borderPic = "containerPicYellow";
   }
   else{
-    TypeWasteElements = HazardousWasteElementsZoom;
+    TypeWasteElements = HZ;
     borderPic = "containerPicRed";
   }
 
@@ -97,7 +93,9 @@ function Select(props) {
       </div>
 
       <p className="break"></p>
-      <p><Bar type={type} ind={slideIndex}/></p>
+      <p><Bar type={type} ind={slideIndex} GeneralWasteElements = {GeneralWasteElements} RecycleWasteElements = {RecycleWasteElements} HazardousWasteElements = {HazardousWasteElements}
+        GH={GH} RH={RH} HH={HH}
+      /></p>
 
     </div>
   );

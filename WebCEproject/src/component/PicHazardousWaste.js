@@ -1,10 +1,6 @@
 import './Picwaste.css'
 import PictureHazardousWaste from '../data/PictureHazardousWaste';
 
-export const HazardousWasteElementsHighlight = PictureHazardousWaste.map((HazardousWaste, index) => {
-  return <PicHazardousWaste key={index} HazardousWaste={HazardousWaste} size="highlight"/>;
-});
-
 function PicHazardousWaste(props){
     
     const {HazardousWaste, size} = props;

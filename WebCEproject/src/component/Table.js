@@ -1,15 +1,18 @@
 //import { useState } from "react/cjs/react.production.min";
 import { useState } from "react";
 // import Picwaste from "./PicGeneralWaste";
-import { GeneralWasteElements, RecycleWasteElements, HazardousWasteElements } from "./Bar";
+
 import "./Table.css";
-import Bar from "./Bar";
+//import Bar from "./Bar";
 import Select from "./Select";
 import Graph from "./Graph";
 
 // let Showbar = <Bar type = "1" />
 
-function Table() {
+function Table(props) {
+
+  const { GeneralWasteElements,RecycleWasteElements,HazardousWasteElements, GZ , RZ , HZ , GH , RH , HH } = props;
+  
 
     let typeOfWaste = ["General Waste", "Recycle Waste", "Hazardous Waste"];
 
@@ -21,11 +24,15 @@ function Table() {
     }
     
     //let Showbar = <Bar type = "1"/>
-    let Showpic = <Select type = "1" />
+    let Showpic = <Select type = "1" GeneralWasteElements = {GeneralWasteElements} RecycleWasteElements = {RecycleWasteElements} HazardousWasteElements = {HazardousWasteElements}
+      GZ={GZ} RZ={RZ} HZ={HZ} GH={GH} RH={RH} HH={HH}
+    />
 
     if(!!selectedType){
       //Showbar = <Bar type = {selectedType} />
-      Showpic = <Select type = {selectedType} />
+      Showpic = <Select type = {selectedType} GeneralWasteElements = {GeneralWasteElements} RecycleWasteElements = {RecycleWasteElements} HazardousWasteElements = {HazardousWasteElements}
+      GZ={GZ} RZ={RZ} HZ={HZ} GH={GH} RH={RH} HH={HH}
+    />
     }
     
   return (

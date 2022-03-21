@@ -1,10 +1,6 @@
 import './Picwaste.css'
 import PictureRecycleWaste from '../data/PictureRecycleWaste';
 
-export const RecycleWasteElementsHighlight = PictureRecycleWaste.map((RecycleWaste, index) => {
-  return <PicRecycleWaste key={index} RecycleWaste={RecycleWaste} size="highlight"/>;
-});
-
 function PicRecycleWaste(props){
     
     const {RecycleWaste, size} = props;
