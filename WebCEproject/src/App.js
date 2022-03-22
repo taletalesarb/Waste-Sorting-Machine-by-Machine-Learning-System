@@ -21,10 +21,16 @@ function App() {
     dateformat =newValue.toISOString().split('T')[0]; 
     alert(dateformat);
   };
-  
+
+  if(!!value){
+    dateformat = value.toISOString().split('T')[0];
+  }
+
+  /*-----------------------------------------------------------------------------*/
+
   const [state, setState] = useState([])
     useEffect(() => {
-        fetch("http://127.0.0.1:5000/getnumber")
+        fetch("http://127.0.0.1:5000/getnumber/" + dateformat)
           .then(response => response.json())
           .then(data => setState(data));
     })
@@ -99,9 +105,9 @@ function App() {
         href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
         rel="stylesheet"
       ></link>
-      
+      <link rel="icon" href="../picture/bin.png" />
       <Header value={value} newDate={dateChange}/>
-
+      
       <Table GeneralWasteElements = {GeneralWasteElements} RecycleWasteElements = {RecycleWasteElements} HazardousWasteElements = {HazardousWasteElements}
         GZ={GeneralWasteElementsZoom} RZ={RecycleWasteElementsZoom} HZ={HazardousWasteElementsZoom}
         GH={GeneralWasteElementsHighlight} RH={RecycleWasteElementsHighlight} HH={HazardousWasteElementsHighlight}

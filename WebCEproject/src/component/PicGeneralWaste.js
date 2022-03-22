@@ -3,8 +3,6 @@ import "./Picwaste.css";
 // import a from '../picture/bin.png' {var}
 //import indexpic from './Select';
 
-import PictureGeneralWaste from "../data/PictureGeneralWaste";
-
 function PicGeneralWaste(props) {
   const { GeneralWaste, size } = props;
 

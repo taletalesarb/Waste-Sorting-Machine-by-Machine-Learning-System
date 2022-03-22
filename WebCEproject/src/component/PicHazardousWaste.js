@@ -1,5 +1,4 @@
 import './Picwaste.css'
-import PictureHazardousWaste from '../data/PictureHazardousWaste';
 
 function PicHazardousWaste(props){
     

@@ -11,12 +11,8 @@ function Select(props) {
   
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  let TypeWasteElements=GZ;
+  let TypeWasteElements = GZ;
 
-  var slides = TypeWasteElements;
-  
-  var Show = slides[selectedIndex];
-  
   if(type==="1"){
     TypeWasteElements = GZ;
     borderPic = "containerPicBlue";
@@ -30,6 +26,9 @@ function Select(props) {
     borderPic = "containerPicRed";
   }
 
+  var slides = TypeWasteElements;
+    
+  var Show = slides[selectedIndex];
   /*-----------------------------------------------*/
 
   function plusSlides(num) {
@@ -42,11 +41,9 @@ function Select(props) {
     if (slideIndex < 0) {
       slideIndex = (slides.length-1);
     }
-
     setSelectedIndex(slideIndex);
-    
   }
-  
+  /*-----------------------------------------------*/
   return (
     <div>
       

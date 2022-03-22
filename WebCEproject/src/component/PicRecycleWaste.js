@@ -1,5 +1,4 @@
 import './Picwaste.css'
-import PictureRecycleWaste from '../data/PictureRecycleWaste';
 
 function PicRecycleWaste(props){
     
