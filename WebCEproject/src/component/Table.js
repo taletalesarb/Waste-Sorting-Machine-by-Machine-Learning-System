@@ -1,6 +1,5 @@
 //import { useState } from "react/cjs/react.production.min";
 import { useState } from "react";
-// import Picwaste from "./PicGeneralWaste";
 
 import "./Table.css";
 //import Bar from "./Bar";

@@ -1,30 +1,7 @@
 import { useState } from "react";
 import "./Select.css";
-
-import PicGeneralWaste from './PicGeneralWaste';
-import PictureGeneralWaste from '../data/PictureGeneralWaste';
-
-import PicRecycleWaste from './PicRecycleWaste';
-import PictureRecycleWaste from '../data/PictureRecycleWaste';
-
-import PicHazardousWaste from './PicHazardousWaste';
-import PictureHazardousWaste from '../data/PictureHazardousWaste';
 import Bar from "./Bar";
 
-export const GeneralWasteElementsZoom = PictureGeneralWaste.map((GeneralWaste, index) => {
-  return <PicGeneralWaste key={index} GeneralWaste={GeneralWaste} size="zoom"/>;
-});
-
-export const RecycleWasteElementsZoom = PictureRecycleWaste.map((RecycleWaste, index) => {
-  return <PicRecycleWaste key={index} RecycleWaste={RecycleWaste} size="zoom"/>;
-});
-
-export const HazardousWasteElementsZoom = PictureHazardousWaste.map((HazardousWaste, index) => {
-  return <PicHazardousWaste key={index} HazardousWaste={HazardousWaste} size="zoom"/>;
-});
-
-
-let TypeWasteElements=GeneralWasteElementsZoom;
 let slideIndex = 0;
 
 let borderPic;
@@ -34,10 +11,11 @@ function Select(props) {
   
   const [selectedIndex, setSelectedIndex] = useState(0);
 
+  let TypeWasteElements=GZ;
+
   var slides = TypeWasteElements;
   
   var Show = slides[selectedIndex];
-  
   
   if(type==="1"){
     TypeWasteElements = GZ;
@@ -66,7 +44,7 @@ function Select(props) {
     }
 
     setSelectedIndex(slideIndex);
-    //document.getElementById("indexZoom").value=slideIndex;
+    
   }
   
   return (

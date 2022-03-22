@@ -1,25 +1,6 @@
-// import * as React from 'react';
+
 // import TextField from '@mui/material/TextField';
 import './Date.css'
-// export default function Date() {
-
-//   return (
-//     <div >
-//     <TextField 
-//       id="date"
-//       // label="Birthday"
-//       type="date"
-//       defaultValue="2022-02-24"
-//       sx={{ width: 180 }}
-//       InputLabelProps={{
-//         shrink: true,
-        
-//       }}
-//     />
-//   </div>
-// );
-// }
-
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
@@ -32,18 +13,19 @@ import MobileDatePicker from '@mui/lab/MobileDatePicker';
 import { isToday, weeksToDays } from 'date-fns';
 
 
-export default function MaterialUIPickers() {
+export default function MaterialUIPickers(props) {
+  const { newDate , value} = props;
 
   var today = new Date();
   var min = (new Date()).setDate(today.getDate() - 7);
 
-  const [value, setValue] = React.useState(today);
+  //const [value, setValue] = React.useState(today);
 
-  const handleChange = (newValue) => {
-    setValue(newValue);
-    //alert(newValue.toString());
-    alert(newValue);
-  };
+  // const handleChange = (newValue) => {
+  //   setValue(newValue);
+  //   //alert(newValue.toString());
+  //   alert(newValue);
+  // };
   
   return (
     <div id = "selectDate" >
@@ -54,33 +36,13 @@ export default function MaterialUIPickers() {
           label="Date"
           inputFormat="dd/MM/yyyy"
           value={value}
-          onChange={handleChange}
+          onChange={newDate}
           
           maxDate= {today}
           minDate = {min}
           renderInput={(params) => <TextField {...params} id="date" />}
           
         />
-        {/* <MobileDatePicker
-          label="Date mobile"
-          inputFormat="MM/dd/yyyy"
-          value={value}
-          onChange={handleChange}
-          renderInput={(params) => <TextField {...params} />}
-        />
-        <TimePicker
-          label="Time"
-          value={value}
-          onChange={handleChange}
-          renderInput={(params) => <TextField {...params} />}
-        />
-        <DateTimePicker
-          label="Date&Time picker"
-          value={value}
-          onChange={handleChange}
-          renderInput={(params) => <TextField {...params} />}
-        /> */}
-      {/* </Stack> */}
     </LocalizationProvider>
     
     </div>
