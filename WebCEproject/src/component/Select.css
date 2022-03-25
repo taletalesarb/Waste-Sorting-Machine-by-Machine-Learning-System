@@ -1,5 +1,6 @@
 .container-select {
-  background-color: rgba(149,175,255);
+  /* background-color: rgba(149,175,255); */
+  background-color: #b398fc;
   border-radius: 5px;
   width: 100%;
   max-width: 300px;

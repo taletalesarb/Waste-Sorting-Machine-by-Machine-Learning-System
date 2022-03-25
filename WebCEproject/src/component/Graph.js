@@ -6,9 +6,10 @@ import {
   BarSeries,
   Title,
   ArgumentAxis,
-  ValueAxis
+  ValueAxis,
 } from '@devexpress/dx-react-chart-material-ui';
 import { Animation } from '@devexpress/dx-react-chart';
+
 
 
 const data = [
@@ -18,17 +19,22 @@ const data = [
   { waste: 'Others', percentage: 10 ,chartColor: '#354657'},
 ];
 
+
+
 export default class Graph extends React.PureComponent {
+  
   constructor(props) {
     super(props);
 
     this.state = {
-      data,
+      data
     };
   }
 
+
   render() {
     const { data: chartData } = this.state;
+    
     const colorPalette = [
       "#354657",
       "#5597e2",
@@ -38,11 +44,11 @@ export default class Graph extends React.PureComponent {
 
     return (
       <Paper className="PaperSize">
-      
+        
         <Chart
           data={chartData}
           colorType="literal"
-          height={270}
+          height={230}
           width={600}
           
         >
@@ -50,15 +56,17 @@ export default class Graph extends React.PureComponent {
           <ArgumentAxis />
           <ValueAxis max={4} />
           
+          
           <BarSeries
+            // data={data1x}
             valueField="percentage"
             argumentField="waste"
-            color= {this.state.data.chartColor}
-            
-            
-                                  
+            color= "#01b29a"
           />
-          <Title text="Waste Sorted" />
+
+          
+          {/* <Title text="Waste Sorted"/> */}
+          <div className='deco'>Waste Sorted</div>
           <Animation />
         </Chart>
       </Paper>

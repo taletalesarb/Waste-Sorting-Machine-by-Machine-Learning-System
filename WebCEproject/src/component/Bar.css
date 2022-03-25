@@ -1,8 +1,10 @@
 /*----------------------bar-------------------------*/
 
 .barg{
-  background-color: rgba(191,227,254);
-  height: fit-content;
+  /* background-color: rgba(191,227,254); */
+  background-color: #87cdfb;
+  /* height: fit-content; */
+  height: 100px;
   width: 100%;
   /* max-width: 200vh; */
   border-radius: 5px;
@@ -38,8 +40,8 @@
 
 .barr{
   background-color: rgb(245, 237, 191);
-  /* height: 120px; */
-  height: fit-content;
+  height: 100px;
+  /* height: fit-content; */
   width: 100%;
   /* max-width: 200vh; */
   /* position: relative; */
@@ -80,8 +82,8 @@
 
 .barh{
   background-color: #f1bdc6;
-  /* height: 120px; */
-  height: fit-content;
+  height: 100px;
+  /* height: fit-content; */
   width: 100%;
   border-radius: 5px;
   position: relative;

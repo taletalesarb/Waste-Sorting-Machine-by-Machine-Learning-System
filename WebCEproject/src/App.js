@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./component/Header";
 import Table from "./component/Table";
 
+
 import PicGeneralWaste from "./component/PicGeneralWaste";
 import PicRecycleWaste from "./component/PicRecycleWaste";
 import PicHazardousWaste from "./component/PicHazardousWaste";
@@ -105,13 +106,15 @@ function App() {
         href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
         rel="stylesheet"
       ></link>
-      <link rel="icon" href="../picture/bin.png" />
+      
       <Header value={value} newDate={dateChange}/>
       
       <Table GeneralWasteElements = {GeneralWasteElements} RecycleWasteElements = {RecycleWasteElements} HazardousWasteElements = {HazardousWasteElements}
         GZ={GeneralWasteElementsZoom} RZ={RecycleWasteElementsZoom} HZ={HazardousWasteElementsZoom}
         GH={GeneralWasteElementsHighlight} RH={RecycleWasteElementsHighlight} HH={HazardousWasteElementsHighlight}
       />
+
+      {/* <Graphx/> */}
       
     </div>
   );
