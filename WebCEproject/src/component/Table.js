@@ -10,7 +10,7 @@ import Graph from "./Graph";
 
 function Table(props) {
 
-  const { GeneralWasteElements,RecycleWasteElements,HazardousWasteElements, GZ , RZ , HZ , GH , RH , HH } = props;
+  const { GeneralWasteElements,RecycleWasteElements,HazardousWasteElements, GZ , RZ , HZ , GH , RH , HH, numot, sum } = props;
   
 
     let typeOfWaste = ["General Waste", "Recycle Waste", "Hazardous Waste"];
@@ -39,7 +39,9 @@ function Table(props) {
     <div>
       <div className="positionX">
       
-      <p className="item1"><Graph /></p>
+      <p className="item1">
+        <Graph GeneralWasteElements = {GeneralWasteElements} RecycleWasteElements = {RecycleWasteElements} HazardousWasteElements = {HazardousWasteElements} 
+        numot={numot} sum={sum}/></p>
       
       <p className="item2">
       <table id="Amount" >

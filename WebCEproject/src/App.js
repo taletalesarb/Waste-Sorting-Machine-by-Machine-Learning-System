@@ -39,6 +39,8 @@ function App() {
   let numgen = parseInt(state.numg);
   let numre = parseInt(state.numr);
   let numha = parseInt(state.numh);
+  let numot = parseInt(state.numo);
+  let sum = numgen+numre+numha+numot;
 
   const PictureGeneralWaste = []
   for(let i=1;i<=numgen;i++){
@@ -112,9 +114,8 @@ function App() {
       <Table GeneralWasteElements = {GeneralWasteElements} RecycleWasteElements = {RecycleWasteElements} HazardousWasteElements = {HazardousWasteElements}
         GZ={GeneralWasteElementsZoom} RZ={RecycleWasteElementsZoom} HZ={HazardousWasteElementsZoom}
         GH={GeneralWasteElementsHighlight} RH={RecycleWasteElementsHighlight} HH={HazardousWasteElementsHighlight}
+        numot = {numot} sum={sum}
       />
-
-      {/* <Graphx/> */}
       
     </div>
   );
