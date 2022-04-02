@@ -21,7 +21,7 @@ def post_image(img_file):
     return response
 
 addr = 'http://localhost:5000'
-test_url = addr + '/api/test'
+test_url = addr + '/api/picture'
 
 # prepare headers for http request
 # content_type = 'image/jpg'
@@ -43,6 +43,6 @@ if status==False:
 # # send http request with image and receive response
 # response = requests.post(test_url, data=img_encoded.tostring(), headers=headers)
 # # decode response
-# print(json.loads(response.text))
+print(json.loads(response.text))
 
 # expected output: {u'message': u'image received. size=124x124'}
