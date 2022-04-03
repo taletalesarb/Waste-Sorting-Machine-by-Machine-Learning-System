@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>Cleaning_solution48_aug2.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\Cleaning_solution48_aug2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>aerosol_cans</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>83</xmin>
+			<ymin>9</ymin>
+			<xmax>142</xmax>
+			<ymax>220</ymax>
+		</bndbox>
+	</object>
+</annotation>

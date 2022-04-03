@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>Tissue240_aug0.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\Tissue240_aug0.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>tissue</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>27</xmin>
+			<ymin>9</ymin>
+			<xmax>212</xmax>
+			<ymax>221</ymax>
+		</bndbox>
+	</object>
+</annotation>

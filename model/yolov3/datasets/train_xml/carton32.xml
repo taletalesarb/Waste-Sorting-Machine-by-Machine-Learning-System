@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>carton32.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\carton32.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>carton</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>67</xmin>
+			<ymin>28</ymin>
+			<xmax>151</xmax>
+			<ymax>202</ymax>
+		</bndbox>
+	</object>
+</annotation>

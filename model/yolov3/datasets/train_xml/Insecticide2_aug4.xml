@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>Insecticide2_aug4.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\Insecticide2_aug4.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>aerosol_cans</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>76</xmin>
+			<ymin>27</ymin>
+			<xmax>144</xmax>
+			<ymax>200</ymax>
+		</bndbox>
+	</object>
+</annotation>

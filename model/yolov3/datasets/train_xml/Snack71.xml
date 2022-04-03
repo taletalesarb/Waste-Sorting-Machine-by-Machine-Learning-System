@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>Snack71.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\Snack71.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>snack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>14</xmin>
+			<ymin>2</ymin>
+			<xmax>215</xmax>
+			<ymax>163</ymax>
+		</bndbox>
+	</object>
+</annotation>

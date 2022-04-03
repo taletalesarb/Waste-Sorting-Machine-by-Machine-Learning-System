@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>phone136_aug0.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\phone136_aug0.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>phone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>89</xmin>
+			<ymin>1</ymin>
+			<xmax>201</xmax>
+			<ymax>223</ymax>
+		</bndbox>
+	</object>
+</annotation>

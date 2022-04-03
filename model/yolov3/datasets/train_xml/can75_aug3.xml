@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>can75_aug3.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\can75_aug3.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>can</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>13</xmin>
+			<ymin>0</ymin>
+			<xmax>222</xmax>
+			<ymax>159</ymax>
+		</bndbox>
+	</object>
+</annotation>

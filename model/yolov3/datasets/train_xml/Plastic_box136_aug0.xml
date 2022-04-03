@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>Plastic_box136_aug0.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\Plastic_box136_aug0.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>plastic_box</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>25</xmin>
+			<ymin>16</ymin>
+			<xmax>193</xmax>
+			<ymax>133</ymax>
+		</bndbox>
+	</object>
+</annotation>

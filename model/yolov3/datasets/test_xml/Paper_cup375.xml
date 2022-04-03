@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>Paper_cup375.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\Paper_cup375.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>paper_cup</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>27</xmin>
+			<ymin>21</ymin>
+			<xmax>206</xmax>
+			<ymax>210</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>paper152_aug3.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\paper152_aug3.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>news_paper</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>0</xmin>
+			<ymin>77</ymin>
+			<xmax>177</xmax>
+			<ymax>148</ymax>
+		</bndbox>
+	</object>
+</annotation>

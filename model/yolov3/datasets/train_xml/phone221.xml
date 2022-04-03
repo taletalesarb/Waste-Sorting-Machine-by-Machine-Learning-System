@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>phone221.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\phone221.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>phone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>70</xmin>
+			<ymin>85</ymin>
+			<xmax>145</xmax>
+			<ymax>175</ymax>
+		</bndbox>
+	</object>
+</annotation>

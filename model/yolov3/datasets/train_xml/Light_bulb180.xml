@@ -1,0 +1,26 @@
+<annotation>
+	<folder>XML</folder>
+	<filename>Light_bulb180.jpg</filename>
+	<path>D:\Downloads\Compressed\224\k\Light_bulb180.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>light_bulb</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>43</xmin>
+			<ymin>13</ymin>
+			<xmax>209</xmax>
+			<ymax>208</ymax>
+		</bndbox>
+	</object>
+</annotation>
