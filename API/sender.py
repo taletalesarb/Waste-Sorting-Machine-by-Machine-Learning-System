@@ -10,7 +10,7 @@ def post_image(img_file):
     # img = open(img_file, 'rb').read()
     print("imageloaded")
 
-    values = {'type': 'general', 'class': 'bottle'}
+    values = {'type': 'recycle', 'class': 'bottle'}
     
     files = {'upload_file': open(img_file, 'rb')}
 
@@ -29,7 +29,7 @@ test_url = addr + '/api/picture'
 
 print("starting")
 
-response = post_image("pi.png")
+response = post_image("r1.jpg")
 print(response)
 import sys 
 status='idlelib' in sys.modules # Put this segment at the end of code 

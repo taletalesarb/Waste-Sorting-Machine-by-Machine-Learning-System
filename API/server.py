@@ -7,8 +7,6 @@ from datetime import datetime
 import os
 from flask_cors import CORS,cross_origin
 
-
-
 now = datetime.today()
 dateNow = now.strftime("%Y-%m-%d")
 print(dateNow)
@@ -21,6 +19,7 @@ if not isExist:
     os.makedirs(DateFolder+"/general")
     os.makedirs(DateFolder+"/recycle")
     os.makedirs(DateFolder+"/hazardous")
+    os.makedirs(DateFolder+"/others")
     print("The new directory is created!")
 
 
@@ -53,6 +52,7 @@ def Picture():
         numg = len(os.listdir(DateFolder+"/general"))
         numr = len(os.listdir(DateFolder+"/recycle"))
         numh = len(os.listdir(DateFolder+"/hazardous"))
+        
         
         if typeWaste=="general":
             name = numg + 1
@@ -97,13 +97,17 @@ def get_image(image_name):
     except FileNotFoundError:
         abort(404)
 
-@app.route("/getnumber")
+@app.route("/getnumber/<path:date>")
 @cross_origin()
-def getnumber():
-    numg = len(os.listdir("Picture/2022-03-07/general"))
-    numr = len(os.listdir("Picture/2022-03-07/recycle"))
-    numh = len(os.listdir("Picture/2022-03-07/hazardous"))
-    return {"numg":numg,"numr":numr,"numh":numh}
+def getnumber(date):
+    # numg = len(os.listdir("Picture/2022-03-07/general"))
+    # numr = len(os.listdir("Picture/2022-03-07/recycle"))
+    # numh = len(os.listdir("Picture/2022-03-07/hazardous"))
+    numg = len(os.listdir("Picture/"+date+"/general"))
+    numr = len(os.listdir("Picture/"+date+"/recycle"))
+    numh = len(os.listdir("Picture/"+date+"/hazardous"))
+    numo = len(os.listdir("Picture/"+date+"/others"))
+    return {"numg":numg,"numr":numr,"numh":numh,"numo":numo}
         
 
 # start flask app
