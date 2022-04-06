@@ -2,16 +2,11 @@
 // import TextField from '@mui/material/TextField';
 import './Date.css'
 import * as React from 'react';
-import Stack from '@mui/material/Stack';
+
 import TextField from '@mui/material/TextField';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
-import TimePicker from '@mui/lab/TimePicker';
-import DateTimePicker from '@mui/lab/DateTimePicker';
 import DesktopDatePicker from '@mui/lab/DesktopDatePicker';
-import MobileDatePicker from '@mui/lab/MobileDatePicker';
-import { isToday, weeksToDays } from 'date-fns';
-
 
 export default function MaterialUIPickers(props) {
   const { newDate , value} = props;
@@ -19,13 +14,6 @@ export default function MaterialUIPickers(props) {
   var today = new Date();
   var min = (new Date()).setDate(today.getDate() - 7);
 
-  //const [value, setValue] = React.useState(today);
-
-  // const handleChange = (newValue) => {
-  //   setValue(newValue);
-  //   //alert(newValue.toString());
-  //   alert(newValue);
-  // };
   
   return (
     <div id = "selectDate" >
@@ -41,11 +29,9 @@ export default function MaterialUIPickers(props) {
           maxDate= {today}
           minDate = {min}
           renderInput={(params) => <TextField {...params} id="date" />}
-          
         />
     </LocalizationProvider>
     
     </div>
   );
 }
-

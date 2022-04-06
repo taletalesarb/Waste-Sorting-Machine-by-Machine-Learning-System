@@ -1,27 +1,34 @@
 import { useState,useEffect } from "react";
 import * as React from 'react';
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./component/Header";
 import Table from "./component/Table";
 
-
 import PicGeneralWaste from "./component/PicGeneralWaste";
 import PicRecycleWaste from "./component/PicRecycleWaste";
 import PicHazardousWaste from "./component/PicHazardousWaste";
+import Alert from "./component/Alert";
 
 function App() {
 
   var today = new Date();
+  let daydefault = today;
   let dateformat = today.toISOString().split('T')[0];
-  const [value, setValue] = React.useState(today);
+  
+  const [value, setValue] = React.useState(daydefault);
   const dateChange = (newValue) => {
     setValue(newValue);
-    // alert(newValue.toString());
-    // alert(newValue);
-    dateformat =newValue.toISOString().split('T')[0]; 
-    alert(dateformat);
+    dateformat = newValue.toISOString().split('T')[0];
+    document.getElementById("popup").style.display = "flex";
+    // alert(dateformat);
   };
+
+  let popup = null;
+
+  if(!!value&&(value!=daydefault)){
+    popup = <Alert date = {value.toDateString()}/>
+  }
+
 
   if(!!value){
     dateformat = value.toISOString().split('T')[0];
@@ -31,7 +38,7 @@ function App() {
 
   const [state, setState] = useState([])
     useEffect(() => {
-        fetch("http://127.0.0.1:5000/getnumber/" + dateformat)
+        fetch("http://161.246.6.249:80/getnumber/" + dateformat)
           .then(response => response.json())
           .then(data => setState(data));
     })
@@ -45,7 +52,7 @@ function App() {
   const PictureGeneralWaste = []
   for(let i=1;i<=numgen;i++){
     PictureGeneralWaste.push({  
-      picUrl: "http://127.0.0.1:5000/get-image/"+ dateformat +"/general/"+i+".jpg"
+      picUrl: "http://161.246.6.249:80/get-image/"+ dateformat +"/general/"+i+".jpg"
     })
     }
   /*-----------------------------------------------------------------------------*/
@@ -53,7 +60,7 @@ function App() {
   const PictureHazardousWaste = []
   for(let i=1;i<=numha;i++){
     PictureHazardousWaste.push({  
-    picUrl: "http://127.0.0.1:5000/get-image/"+ dateformat +"/hazardous/"+i+".jpg"
+    picUrl: "http://161.246.6.249:80/get-image/"+ dateformat +"/hazardous/"+i+".jpg"
     })
     }
   /*-----------------------------------------------------------------------------*/
@@ -61,7 +68,7 @@ function App() {
   const PictureRecycleWaste = []
   for(let i=1;i<=numre;i++){
     PictureRecycleWaste.push({  
-    picUrl: "http://127.0.0.1:5000/get-image/"+ dateformat +"/recycle/"+i+".jpg"
+    picUrl: "http://161.246.6.249:80/get-image/"+ dateformat +"/recycle/"+i+".jpg"
     })
     }
   /*-----------------------------------------------------------------------------*/
@@ -101,7 +108,6 @@ function App() {
     return <PicHazardousWaste key={index} HazardousWaste={HazardousWaste} size="highlight"/>;
   });
   
-
   return (
     <div className="App">
       <link
@@ -110,7 +116,9 @@ function App() {
       ></link>
       
       <Header value={value} newDate={dateChange}/>
-      
+
+      {popup}
+
       <Table GeneralWasteElements = {GeneralWasteElements} RecycleWasteElements = {RecycleWasteElements} HazardousWasteElements = {HazardousWasteElements}
         GZ={GeneralWasteElementsZoom} RZ={RecycleWasteElementsZoom} HZ={HazardousWasteElementsZoom}
         GH={GeneralWasteElementsHighlight} RH={RecycleWasteElementsHighlight} HH={HazardousWasteElementsHighlight}
@@ -122,4 +130,3 @@ function App() {
 }
 
 export default App;
-

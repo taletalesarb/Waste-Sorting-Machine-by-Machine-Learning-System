@@ -1,8 +1,6 @@
-//import { useState } from "react/cjs/react.production.min";
 import { useState } from "react";
 
 import "./Table.css";
-//import Bar from "./Bar";
 import Select from "./Select";
 import Graph from "./Graph";
 
@@ -68,11 +66,7 @@ function Table(props) {
 
       <p className="item3">{Showpic}</p>
       </div>
-
-        {/* <p>{Showbar}</p> */}
-
     </div>
   );
   }
 export default Table;
-

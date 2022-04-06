@@ -1,0 +1,29 @@
+.conalert{
+    background-color: #faa2c0;
+    border-color: #01b29a;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 30%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35%;
+    
+
+}
+
+.closebt{
+    width: 10%;
+    height: 40%;
+    background-color: #b398fc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 85%;
+    border: 1px solid black;
+    
+}
+.closebt:hover{
+    background-color: rgba(2, 47, 211, 0.59);
+}

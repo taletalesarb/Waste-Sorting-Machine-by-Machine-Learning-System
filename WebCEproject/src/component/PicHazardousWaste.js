@@ -7,7 +7,7 @@ function PicHazardousWaste(props){
         return (
           <div>
             <div className="picwaste">
-              {/* <p>{GeneralWaste.name}</p> */}
+              
               <img src={HazardousWaste.picUrl} width="60px" height="60px" />
             </div>
           </div>

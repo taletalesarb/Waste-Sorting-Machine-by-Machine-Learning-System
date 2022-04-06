@@ -1,8 +1,5 @@
 import "./Picwaste.css";
-
 // import a from '../picture/bin.png' {var}
-//import indexpic from './Select';
-
 function PicGeneralWaste(props) {
   const { GeneralWaste, size } = props;
 
@@ -10,7 +7,6 @@ function PicGeneralWaste(props) {
     return (
       <div>
         <div className="picwaste">
-          {/* <p>{GeneralWaste.name}</p> */}
           <img src={GeneralWaste.picUrl} width="60px" height="60px" />
         </div>
       </div>
@@ -33,5 +29,4 @@ function PicGeneralWaste(props) {
     );
   }
 }
-
 export default PicGeneralWaste;

@@ -1,12 +1,9 @@
 /*----------------------bar-------------------------*/
 
 .barg{
-  /* background-color: rgba(191,227,254); */
   background-color: #87cdfb;
-  /* height: fit-content; */
   height: 100px;
   width: 100%;
-  /* max-width: 200vh; */
   border-radius: 5px;
 
   position: relative;
@@ -41,15 +38,7 @@
 .barr{
   background-color: rgb(245, 237, 191);
   height: 100px;
-  /* height: fit-content; */
   width: 100%;
-  /* max-width: 200vh; */
-  /* position: relative; */
-  /* float: right;
-  right: 2%; */
-  /* top: 50px; */
-  /* display: flex; */
-  /*align-items: center; */
   position: relative;
   top: 5vh;
   border-radius: 5px;
@@ -60,7 +49,6 @@
 
 /* width */
 .barr::-webkit-scrollbar {
-  /* width: 10px; */
   height: 20px;
 }
 
@@ -83,7 +71,6 @@
 .barh{
   background-color: #f1bdc6;
   height: 100px;
-  /* height: fit-content; */
   width: 100%;
   border-radius: 5px;
   position: relative;
@@ -95,7 +82,6 @@
 
 /* width */
 .barh::-webkit-scrollbar {
-  /* width: 10px; */
   height: 20px;
 }
 
@@ -118,4 +104,3 @@
 .flex{
   display: flex;
 }
-

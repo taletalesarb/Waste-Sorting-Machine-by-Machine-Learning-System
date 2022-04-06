@@ -1,13 +1,11 @@
 import './Picwaste.css'
 
 function PicRecycleWaste(props){
-    
     const {RecycleWaste, size} = props;
     if (size === "small") {
         return (
           <div>
             <div className="picwaste">
-              {/* <p>{GeneralWaste.name}</p> */}
               <img src={RecycleWaste.picUrl} width="60px" height="60px" />
             </div>
           </div>
@@ -16,7 +14,6 @@ function PicRecycleWaste(props){
         return (
           <div>
             <div className="picwasteZoom">
-              {/* <p>{GeneralWaste.name}</p> */}
               <img className="respic" src={RecycleWaste.picUrl} width="100px" height="100px" />
             </div>
           </div>
@@ -26,7 +23,6 @@ function PicRecycleWaste(props){
         return (
           <div>
             <div className="picwasteHighlight">
-              {/* <p>{GeneralWaste.name}</p> */}
               <img src={RecycleWaste.picUrl} width="60px" height="60px" />
             </div>
           </div>

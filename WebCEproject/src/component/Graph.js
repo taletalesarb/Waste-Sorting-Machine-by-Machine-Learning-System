@@ -9,7 +9,7 @@ import {
   ValueAxis,
   Tooltip
 } from "@devexpress/dx-react-chart-material-ui";
-import { Animation, Stack } from "@devexpress/dx-react-chart";
+import { Animation } from "@devexpress/dx-react-chart";
 import { EventTracker, HoverState } from '@devexpress/dx-react-chart';
 
 function Graph(props) {
@@ -20,7 +20,7 @@ function Graph(props) {
   let percentH;
   let percentO;
 
-  if (sum!=0){
+  if (sum!==0){
     percentG = Math.round((GeneralWasteElements.length/sum)*100);
     percentR = Math.round((RecycleWasteElements.length/sum)*100);
     percentH = Math.round((HazardousWasteElements.length/sum)*100);
@@ -33,34 +33,25 @@ function Graph(props) {
     percentO = 0;
   }
 
-  // const [data, chartData] = useState(data);
-  
-  // const colorPalette = [
-  //   "#354657",
-  //   "#5597e2",
-  //   "#28A96C",
-  //   "#d44401"
-  // ]
-  
-  // data = [
-  //   { waste: "General", percentage1: percentG, chartColor: "#354657" },
-  //   { waste: "Recycle", percentage2: percentR, chartColor: "#5597e2" },
-  //   { waste: "Hazardous", percentage3: percentH, chartColor: "#354657" },
-  //   { waste: "Others", percentage4: percentO, chartColor: "#354657" },
-  // ];
-
   data = [
-    { waste: "General", percentage1: 10, chartColor: "#354657" },
-    { waste: "Recycle", percentage2: 20, chartColor: "#5597e2" },
-    { waste: "Hazardous", percentage3: 30, chartColor: "#354657" },
-    { waste: "Others", percentage4: 40, chartColor: "#354657" },
+    { waste: "General", percentage1: percentG},
+    { waste: "Recycle", percentage2: percentR},
+    { waste: "Hazardous", percentage3: percentH},
+    { waste: "Others", percentage4: percentO},
   ];
+  // data = [
+  //   { waste: "General", percentage1: 10},
+  //   { waste: "Recycle", percentage2: 20},
+  //   { waste: "Hazardous", percentage3: 30},
+  //   { waste: "Others", percentage4: 40},
+  // ];
 
   return (
     <div>
-      {/* <div>{percentG}{percentR}{percentH}</div> */}
+      
       <Paper className="PaperSize">
         <Chart data={data} colorType="literal" height={230} width={600}>
+          
           <ArgumentAxis />
           <ValueAxis max={4} />
 
@@ -68,6 +59,7 @@ function Graph(props) {
             valueField="percentage1"
             argumentField="waste"
             color="#0070C0"
+            
           />
           <BarSeries
            valueField="percentage2"
@@ -88,7 +80,8 @@ function Graph(props) {
 
           {/* <Title text="Waste Sorted"/> */}
           <div className="deco">Waste Sorted </div>
-          <Animation />
+          <div className="amount">Amount (%)</div>
+          {/* <Animation /> */}
           <EventTracker />
           <HoverState />
           <Tooltip />

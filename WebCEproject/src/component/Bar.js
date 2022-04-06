@@ -7,14 +7,12 @@ function Bar(props) {
     const {type, ind, GeneralWasteElements,RecycleWasteElements,HazardousWasteElements, GH , RH , HH } = props;
     
     if(type==="1"){
-        
         return(
             <div className="barg">
                 <div className="flex">
                     {GeneralWasteElements.slice(0,ind)}
                     {GH[ind]}
                     {GeneralWasteElements.slice(ind+1,GeneralWasteElements.length)}
-                    
                 </div>
             </div>
             );
