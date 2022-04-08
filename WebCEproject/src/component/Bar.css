@@ -47,18 +47,15 @@
   transform: translateX(-50%);
 }
 
-/* width */
 .barr::-webkit-scrollbar {
   height: 20px;
 }
 
-/* Track */
 .barr::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
-/* Handle */
 .barr::-webkit-scrollbar-thumb {
   background: #e7c817;
   border-radius: 10px;
@@ -80,18 +77,15 @@
   transform: translateX(-50%);
 }
 
-/* width */
 .barh::-webkit-scrollbar {
   height: 20px;
 }
 
-/* Track */
 .barh::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
-/* Handle */
 .barh::-webkit-scrollbar-thumb {
   background: #DD2D4D;
   border-radius: 10px;

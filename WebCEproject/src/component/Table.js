@@ -42,24 +42,26 @@ function Table(props) {
         numot={numot} sum={sum}/></p>
       
       <p className="item2">
+      
       <table id="Amount" >
         <tr>
-          <th className="one"></th>
+          <th className="one">Type of waste</th>
           <th className="one">Amount of waste (pieces)</th>
         </tr>
         <tr>
-          <th className="two"><button className="typeWaste" onClick={() => onTypeClick('General Waste','1')}>{typeOfWaste[0]}</button></th>
+          <th className="two" ><button className="typeWaste" id="tgg" onClick={() => onTypeClick('General Waste','1')}>{typeOfWaste[0]}</button></th>
           <th className="two">{GeneralWasteElements.length}</th>
         </tr>
         <tr>
-          <th className="three"><button className="typeWaste" onClick={() => onTypeClick('Recycle Waste','2')}>{typeOfWaste[1]}</button></th>
+          <th className="three"><button className="typeWaste" id="trr" onClick={() => onTypeClick('Recycle Waste','2')}>{typeOfWaste[1]}</button></th>
           <th className="three">{RecycleWasteElements.length}</th>
         </tr>
         <tr>
-          <th className="four"><button className="typeWaste" onClick={() => onTypeClick('Hazardous Waste','3')}>{typeOfWaste[2]}</button></th>
+          <th className="four"><button className="typeWaste" id="thh" onClick={() => onTypeClick('Hazardous Waste','3')}>{typeOfWaste[2]}</button></th>
           <th className="four">{HazardousWasteElements.length}</th>
         </tr>
       </table>
+      <p className="hint">Click type of waste to show picture.</p>
       </p>
 
       <p className="break"></p>

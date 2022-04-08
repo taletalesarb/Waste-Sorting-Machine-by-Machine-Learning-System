@@ -48,8 +48,22 @@
 .typeWaste{
     background-color: transparent;
     border: none;
+    /* border: 1px double black;
+    border-radius: 5px; */
     cursor: pointer;
+    padding-left: 5%;
+    padding-right: 5%;
 }
+
+/* #tgg{
+    background-color: rgb(75, 151, 205);
+}
+#trr{
+    background-color: rgb(245, 237, 191);
+}
+#thh{
+    background-color: #f1bdc6;
+} */
 
 .typeWaste:hover{
     color: white;
@@ -92,4 +106,10 @@
     position: relative; 
     top: -15vh;
     width:90%;
+}
+
+.hint{
+    float: left;
+    font-size: small;
+    margin-top: 1%;
 }

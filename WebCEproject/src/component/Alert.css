@@ -15,12 +15,12 @@
 }
 
 .closebt{
-    width: 10%;
+    width: 15%;
     height: 40%;
     background-color: #b398fc;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 85%;
+    margin-left: 80%;
     border: 1px solid black;
     
 }
