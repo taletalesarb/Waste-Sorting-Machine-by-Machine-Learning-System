@@ -26,7 +26,7 @@ function App() {
   let popup = null;
 
   if(!!value&&(value!=daydefault)){
-    popup = <Alert date = {value.toDateString()} />
+    popup = <Alert date = {value.toDateString().split(' ')[0] + " " + value.toDateString().split(' ')[2] + " " + value.toDateString().split(' ')[1]+ " " + value.toDateString().split(' ')[3] } />
   }
 
 

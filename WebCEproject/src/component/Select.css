@@ -49,10 +49,16 @@
   padding-right: 2px;
   padding-top: 3px;
   border: none;
+  box-shadow: 0 4px #999;
 }
 
 .button-select1:hover{
   background-color: rgba(2, 47, 211, 0.59);
+}
+
+.button-select1:active{
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
 }
 
 .button-select2 {
@@ -65,10 +71,16 @@
   padding-left: 2px;
   padding-top: 3px;
   border: none;
+  box-shadow: 0 4px #999;
 }
 
 .button-select2:hover{
   background-color: rgba(2, 47, 211, 0.59);
+}
+
+.button-select2:active{
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
 }
 
 .Text{

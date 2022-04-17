@@ -8,7 +8,7 @@ import Graph from "./Graph";
 
 function Table(props) {
 
-  const { GeneralWasteElements,RecycleWasteElements,HazardousWasteElements, GZ , RZ , HZ , GH , RH , HH, numot, sum } = props;
+  const { GeneralWasteElements,RecycleWasteElements,HazardousWasteElements, GZ , RZ , HZ , GH , RH , HH, numot, sum} = props;
   
 
     let typeOfWaste = ["General Waste", "Recycle Waste", "Hazardous Waste"];
@@ -40,7 +40,7 @@ function Table(props) {
       <p className="item1">
         <Graph GeneralWasteElements = {GeneralWasteElements} RecycleWasteElements = {RecycleWasteElements} HazardousWasteElements = {HazardousWasteElements} 
         numot={numot} sum={sum}/></p>
-      
+
       <p className="item2">
       
       <table id="Amount" >
@@ -61,7 +61,7 @@ function Table(props) {
           <th className="four">{HazardousWasteElements.length}</th>
         </tr>
       </table>
-      <p className="hint">Click type of waste to show picture.</p>
+      <p className="hint"><img src = {require('../picture/tap.png')} width="15" height="15" /> Click type of waste to show picture.</p>
       </p>
 
       <p className="break"></p>

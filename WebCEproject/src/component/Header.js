@@ -16,6 +16,7 @@ function Header(props){
                 <p><Date newDate={newDate} value={value}/></p>
             
             </div>
+           
         </div>
     );
 }

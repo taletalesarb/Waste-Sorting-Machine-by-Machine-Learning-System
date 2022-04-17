@@ -53,22 +53,59 @@
     cursor: pointer;
     padding-left: 5%;
     padding-right: 5%;
+    width: 63%;
+    box-shadow: 0 2px rgb(50, 50, 50);
 }
 
-/* #tgg{
-    background-color: rgb(75, 151, 205);
+.typeWaste:active{
+    transform: translateY(2px);
+    box-shadow: 0 1px black;
 }
+
+#tgg{
+    background-color: rgb(118, 174, 215);
+    
+    /* border: 1px solid rgb(98, 163, 209); */
+    border-radius: 5px;
+    /* box-shadow: 0 2px rgb(50, 50, 50); */
+}
+
+/* #tgg:hover{
+    background-color: #0070C0;
+    border: 1px solid rgb(98, 163, 209);
+    border-radius: 5px;
+} */
+
 #trr{
     background-color: rgb(245, 237, 191);
+    border-radius: 5px;
+    /* box-shadow: 0 2px rgb(50, 50, 50); */
 }
+
+/* #trr:hover{
+    background-color: #F3DC5F;
+    border: 1px solid rgb(245, 237, 191);
+    border-radius: 5px;
+} */
+
 #thh{
     background-color: #f1bdc6;
+    border-radius: 5px;
+    /* box-shadow: 0 2px rgb(50, 50, 50); */
+}
+
+/* #thh:hover{
+    background-color: #DD2D4D;
+    border: 1px solid f1bdc6;
+    border-radius: 5px;
 } */
 
 .typeWaste:hover{
-    color: white;
+    /* color: white; */
     text-shadow: 0px 0px 5px white;
 }
+
+
 
 .positionX{
     display: flex;
