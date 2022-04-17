@@ -1,12 +1,10 @@
 
 #selectDate{
     background-color: #faa2c0;
-    /* height: 50px; */
     width: 180px;
+    
 }
 #date{
     height: 12px;
     font-family: 'Acme', sans-serif;
-    color-scheme: #ddfddd;
 }
-

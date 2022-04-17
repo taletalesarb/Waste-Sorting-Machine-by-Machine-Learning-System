@@ -45,7 +45,8 @@
   width: 40px;
   height: 40px;
   background-color: rgba(43, 86, 236, 0.59);
-  cursor: pointer;
+  cursor: url(../picture/click.png), pointer;
+  
   padding-right: 2px;
   padding-top: 3px;
   border: none;
@@ -66,7 +67,7 @@
   width: 40px;
   height: 40px;
   background-color: rgba(43, 86, 236, 0.59);
-  cursor: pointer;
+  cursor: url(../picture/click.png), pointer;
   margin-left: 15px;
   padding-left: 2px;
   padding-top: 3px;
