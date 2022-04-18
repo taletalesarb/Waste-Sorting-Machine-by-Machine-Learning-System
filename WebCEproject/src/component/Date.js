@@ -17,24 +17,6 @@ export default function MaterialUIPickers(props) {
   var today = new Date();
   var min = (new Date()).setDate(today.getDate() - 7);
 
-
-  const CssTextField = styled(TextField)({
- 
-    '& .MuiOutlinedInput-root': {
-      '& fieldset': {
-        border: '3px solid #b398fc'
-        ,
-      },
-      '&:hover fieldset': {
-        border: '3px solid #01b29a',
-      },
-      '&.Mui-focused fieldset': {
-        borderColor: 'green',
-      },
-      
-    },
-  });
-
   return (
     <div>
     <div id = "selectDate" >
@@ -47,7 +29,7 @@ export default function MaterialUIPickers(props) {
           onChange={newDate}
           maxDate= {today}
           minDate = {min}
-          renderInput={(params) => <CssTextField {...params} id="date"/>}
+          renderInput={(params) => <TextField {...params} id="date"/>}
         />
     </LocalizationProvider>
     
