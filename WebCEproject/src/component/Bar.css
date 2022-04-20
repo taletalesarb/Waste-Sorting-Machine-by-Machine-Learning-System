@@ -2,7 +2,8 @@
 
 .barg{
   background-color: #87cdfb;
-  height: 100px;
+  /* height: 100px; */
+  height: 15vh;
   width: 100%;
   border-radius: 5px;
 
@@ -37,7 +38,8 @@
 
 .barr{
   background-color: rgb(245, 237, 191);
-  height: 100px;
+  /* height: 100px; */
+  height: 15vh;
   width: 100%;
   position: relative;
   top: 5vh;
@@ -67,7 +69,8 @@
 
 .barh{
   background-color: #f1bdc6;
-  height: 100px;
+  /* height: 100px; */
+  height: 15vh;
   width: 100%;
   border-radius: 5px;
   position: relative;

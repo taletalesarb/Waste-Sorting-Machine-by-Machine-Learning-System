@@ -55,6 +55,10 @@ function App() {
       picUrl: "http://161.246.6.249:443/get-image/"+ dateformat +"/general/"+i+".jpg"
     })
     }
+
+  PictureGeneralWaste.push({
+    picUrl: "/PictureWaste/GeneralWaste/g1.jpg"
+  })
   /*-----------------------------------------------------------------------------*/
 
   const PictureHazardousWaste = []
@@ -110,6 +114,8 @@ function App() {
   
   return (
     <div className="App">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
       <link
         href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
         rel="stylesheet"

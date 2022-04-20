@@ -33,24 +33,25 @@ function Graph(props) {
     percentO = 0;
   }
 
-  data = [
-    { waste: "General", percentage1: percentG},
-    { waste: "Recycle", percentage2: percentR},
-    { waste: "Hazardous", percentage3: percentH},
-    { waste: "Others", percentage4: percentO},
-  ];
   // data = [
-  //   { waste: "General", percentage1: 10},
-  //   { waste: "Recycle", percentage2: 20},
-  //   { waste: "Hazardous", percentage3: 30},
-  //   { waste: "Others", percentage4: 40},
+  //   { waste: "General", percentage1: percentG},
+  //   { waste: "Recycle", percentage2: percentR},
+  //   { waste: "Hazardous", percentage3: percentH},
+  //   { waste: "Others", percentage4: percentO},
   // ];
+
+  data = [
+    { waste: "General", percentage1: 10},
+    { waste: "Recycle", percentage2: 20},
+    { waste: "Hazardous", percentage3: 30},
+    { waste: "Others", percentage4: 40},
+  ];
 
   return (
     <div>
       
       <Paper className="PaperSize">
-        <Chart data={data} colorType="literal" height={230} width={600}>
+        <Chart data={data} colorType="literal" className="chartSize" /*height={300} width={600}*/ >
           
           <ArgumentAxis />
           <ValueAxis max={4} />
