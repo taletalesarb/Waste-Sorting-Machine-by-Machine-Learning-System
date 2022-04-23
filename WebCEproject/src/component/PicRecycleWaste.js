@@ -6,7 +6,7 @@ function PicRecycleWaste(props){
         return (
           <div>
             <div className="picwaste">
-              <img src={RecycleWaste.picUrl} width="60px" height="60px" />
+              <img className="ph" src={RecycleWaste.picUrl} />
             </div>
           </div>
         );
@@ -23,7 +23,7 @@ function PicRecycleWaste(props){
         return (
           <div>
             <div className="picwasteHighlight">
-              <img src={RecycleWaste.picUrl} width="60px" height="60px" />
+              <img className="ph" src={RecycleWaste.picUrl} />
             </div>
           </div>
         );

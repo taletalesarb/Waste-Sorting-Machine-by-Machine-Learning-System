@@ -33,19 +33,19 @@ function Graph(props) {
     percentO = 0;
   }
 
-  // data = [
-  //   { waste: "General", percentage1: percentG},
-  //   { waste: "Recycle", percentage2: percentR},
-  //   { waste: "Hazardous", percentage3: percentH},
-  //   { waste: "Others", percentage4: percentO},
-  // ];
-
   data = [
-    { waste: "General", percentage1: 10},
-    { waste: "Recycle", percentage2: 20},
-    { waste: "Hazardous", percentage3: 30},
-    { waste: "Others", percentage4: 40},
+    { waste: "General", percentage1: percentG},
+    { waste: "Recycle", percentage2: percentR},
+    { waste: "Hazardous", percentage3: percentH},
+    { waste: "Others", percentage4: percentO},
   ];
+
+  // data = [
+  //   { waste: "General", percentage1: 10},
+  //   { waste: "Recycle", percentage2: 20},
+  //   { waste: "Hazardous", percentage3: 30},
+  //   { waste: "Others", percentage4: 40},
+  // ];
 
   return (
     <div>
@@ -80,7 +80,7 @@ function Graph(props) {
 
 
           {/* <Title text="Waste Sorted"/> */}
-          <div className="deco">Waste Sorted </div>
+          <div className="deco">Waste Sorted (%) </div>
           <div className="amount">Amount (%)</div>
           {/* <Animation /> */}
           <EventTracker />

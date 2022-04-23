@@ -1,7 +1,7 @@
 .picwaste {
   background-color: wheat;
-  width: 60px;
-  height: 60px;
+  width: 12vh;
+  height: 12vh;
   
   flex-shrink: 0;
   margin-top: 10px;
@@ -12,18 +12,20 @@
 
 .picwasteZoom {
   background-color: wheat;
-  width: 100px;
-  height: 100px;
+  width: 18vh;
+  height: 18vh;
+  
   flex-shrink: 0;
-  margin: 10px;
+  /* margin: 10px; */
+  margin: 1vh;
   user-select: none;
 }
 
 .picwasteHighlight {
   background-color: wheat;
   box-shadow: 0px 0px 20px rgb(156, 72, 235);
-  width: 60px;
-  height: 60px;
+  width: 12vh;
+  height: 12vh;
   
   flex-shrink: 0;
   margin: 10px;
@@ -31,7 +33,18 @@
 }
 
 .respic {
+  /* margin-top: -5px; */
+  width: 18vh;
+  height: 18vh;
+  min-width: 70px;
+  min-height: 70px;
+  /* max-width: 100px; */
+  /* height: 100px; */
+}
+
+.ph{
+  max-width: 12vh;
   width: 100%;
-  max-width: 100px;
-  height: 100px;
+  max-height: 12vh;
+  height: 100%;
 }

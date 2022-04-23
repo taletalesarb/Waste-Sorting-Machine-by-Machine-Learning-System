@@ -2,7 +2,10 @@
 
 #Amount{
     position: relative;
-    width: 400px;
+    min-width: 400px;
+    width: 30vw;
+    height: 20vh;
+    min-height: auto;
     border-radius: 5px;
     background-color: black;
 }
@@ -31,6 +34,7 @@
 .one{
     background-color: #01b29a;
     color: black;
+    font-size: 1.2vw;
 }
 
 .two{
@@ -48,14 +52,12 @@
 .typeWaste{
     background-color: transparent;
     border: none;
-    /* border: 1px double black;
-    border-radius: 5px; */
-    
     cursor: url(../picture/click.png), pointer;
     padding-left: 5%;
     padding-right: 5%;
     width: 63%;
     box-shadow: 0 2px rgb(50, 50, 50);
+    font-size: 1vw;
 }
 
 .typeWaste:active{
@@ -125,6 +127,6 @@
 
 .hint{
     float: left;
-    font-size: small;
-    margin-top: 1%;
+    font-size: medium;
+    margin-top: 0.4vw;
 }

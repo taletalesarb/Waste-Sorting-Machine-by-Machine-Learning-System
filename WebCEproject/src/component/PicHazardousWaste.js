@@ -8,7 +8,7 @@ function PicHazardousWaste(props){
           <div>
             <div className="picwaste">
               
-              <img src={HazardousWaste.picUrl} width="60px" height="60px" />
+              <img className="ph" src={HazardousWaste.picUrl} />
             </div>
           </div>
         );
@@ -27,7 +27,7 @@ function PicHazardousWaste(props){
           <div>
             <div className="picwasteHighlight">
               {/* <p>{GeneralWaste.name}</p> */}
-              <img src={HazardousWaste.picUrl} width="60px" height="60px" />
+              <img className="ph" src={HazardousWaste.picUrl} />
             </div>
           </div>
         );

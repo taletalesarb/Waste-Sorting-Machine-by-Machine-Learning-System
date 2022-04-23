@@ -14,13 +14,17 @@ function App() {
   var today = new Date();
   let daydefault = today;
   let dateformat = today.toISOString().split('T')[0];
+
+  let alertformat = today.toDateString().split(' ')[0] + " " + today.toDateString().split(' ')[2] + " " + today.toDateString().split(' ')[1]+ " " + today.toDateString().split(' ')[3];
   
   const [value, setValue] = React.useState(daydefault);
   const dateChange = (newValue) => {
     setValue(newValue);
+    
     dateformat = newValue.toISOString().split('T')[0];
-    document.getElementById("popup").style.display = "flex";
-    // alert(dateformat);
+    // document.getElementById("popup").style.display = "flex";
+    alertformat = newValue.toDateString().split(' ')[0] + " " + newValue.toDateString().split(' ')[2] + " " + newValue.toDateString().split(' ')[1]+ " " + newValue.toDateString().split(' ')[3];
+    alert("You select date '" + alertformat+"'");
   };
 
   let popup = null;
@@ -56,9 +60,13 @@ function App() {
     })
     }
 
-  PictureGeneralWaste.push({
-    picUrl: "/PictureWaste/GeneralWaste/g1.jpg"
-  })
+  // PictureGeneralWaste.push({
+  //   picUrl: "/PictureWaste/GeneralWaste/g1.jpg"
+  // },
+  // {
+  //   picUrl: "/PictureWaste/GeneralWaste/g1.jpg"
+  // }
+  // )
   /*-----------------------------------------------------------------------------*/
 
   const PictureHazardousWaste = []
@@ -123,7 +131,7 @@ function App() {
       
       <Header value={value} newDate={dateChange}/>
 
-      {popup}
+      {/* {popup} */}
 
       <Table GeneralWasteElements = {GeneralWasteElements} RecycleWasteElements = {RecycleWasteElements} HazardousWasteElements = {HazardousWasteElements}
         GZ={GeneralWasteElementsZoom} RZ={RecycleWasteElementsZoom} HZ={HazardousWasteElementsZoom}
