@@ -1,0 +1,4 @@
+train: /content/Dataset/train/images
+val: /content/Dataset/valid/images
+nc: 21
+names: ['bottle', 'plastic_bag', 'news_paper', 'carton', 'can', 'glass', 'paper', 'aerosol_cans', 'battery', 'cleaning_solution', 'correction_fluid', 'insecticide', 'light_bulb', 'phone', 'three_eye_plug', 'drinking_straw', 'foam_box', 'paper_cup', 'plastic_box', 'snack', 'tissue']
