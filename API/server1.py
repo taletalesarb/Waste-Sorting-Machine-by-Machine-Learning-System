@@ -52,7 +52,6 @@ def Picture():
         numg = len(os.listdir(DateFolder+"/general"))
         numr = len(os.listdir(DateFolder+"/recycle"))
         numh = len(os.listdir(DateFolder+"/hazardous"))
-        numo = len(os.listdir(DateFolder+"/others"))
         
         
         if typeWaste=="general":
@@ -61,8 +60,6 @@ def Picture():
             name = numr + 1
         elif typeWaste=="hazardous":
             name = numh + 1
-        elif typeWaste=="others":
-            name = numo + 1
         
         cv2.imwrite("Picture/"+dateNow+"/"+typeWaste+"/"+str(name)+".jpg",img)
 
@@ -80,7 +77,7 @@ def Picture():
         return {"Pictures" : Pictures}, 200
 
 
-from flask import send_file, send_from_directory, abort
+from flask import send_file, send_from_directory, safe_join, abort
 
 @app.route('/Showpic', methods=['GET'])
 def Showpic():
@@ -89,9 +86,9 @@ def Showpic():
 
 
 
-app.config["CLIENT_IMAGES"] = "c:/API/Picture"
+app.config["CLIENT_IMAGES"] = "d:/API/Picture"
 print(app.config["CLIENT_IMAGES"])
-
+print(os.listdir("d:/API/Picture/2022-03-07/general"))
 
 @app.route("/get-image/<path:image_name>")
 def get_image(image_name):
@@ -117,4 +114,4 @@ def getnumber(date):
 # app.run(host="0.0.0.0", port=8080)
 if __name__ == "__main__":
     from waitress import serve
-    serve(app, host="0.0.0.0", port=443)
+    serve(app, host="0.0.0.0", port=8080)
