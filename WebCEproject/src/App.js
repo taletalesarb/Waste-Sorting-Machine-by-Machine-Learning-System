@@ -42,7 +42,8 @@ function App() {
 
   const [state, setState] = useState([])
     useEffect(() => {
-        fetch("http://161.246.6.249:443/getnumber/" + dateformat)
+        // fetch("http://161.246.6.248:443/getnumber/" + dateformat)
+        fetch("http://localhost:8080/getnumber/" + dateformat)
           .then(response => response.json())
           .then(data => setState(data));
     })
@@ -56,23 +57,18 @@ function App() {
   const PictureGeneralWaste = []
   for(let i=1;i<=numgen;i++){
     PictureGeneralWaste.push({  
-      picUrl: "http://161.246.6.249:443/get-image/"+ dateformat +"/general/"+i+".jpg"
+      picUrl: "http://localhost:8080/get-image/"+ dateformat +"/general/"+i+".jpg"
+      // picUrl: "http://161.246.6.248:443/get-image/"+ dateformat +"/general/"+i+".jpg"
     })
     }
 
-  // PictureGeneralWaste.push({
-  //   picUrl: "/PictureWaste/GeneralWaste/g1.jpg"
-  // },
-  // {
-  //   picUrl: "/PictureWaste/GeneralWaste/g1.jpg"
-  // }
-  // )
   /*-----------------------------------------------------------------------------*/
 
   const PictureHazardousWaste = []
   for(let i=1;i<=numha;i++){
     PictureHazardousWaste.push({  
-    picUrl: "http://161.246.6.249:443/get-image/"+ dateformat +"/hazardous/"+i+".jpg"
+    picUrl: "http://localhost:8080/get-image/"+ dateformat +"/hazardous/"+i+".jpg"
+    // picUrl: "http://161.246.6.248:443/get-image/"+ dateformat +"/hazardous/"+i+".jpg"
     })
     }
   /*-----------------------------------------------------------------------------*/
@@ -80,7 +76,8 @@ function App() {
   const PictureRecycleWaste = []
   for(let i=1;i<=numre;i++){
     PictureRecycleWaste.push({  
-    picUrl: "http://161.246.6.249:443/get-image/"+ dateformat +"/recycle/"+i+".jpg"
+    picUrl: "http://localhost:8080/get-image/"+ dateformat +"/recycle/"+i+".jpg"
+    // picUrl: "http://161.246.6.248:443/get-image/"+ dateformat +"/recycle/"+i+".jpg"
     })
     }
   /*-----------------------------------------------------------------------------*/

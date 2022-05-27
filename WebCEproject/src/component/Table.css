@@ -34,7 +34,7 @@
 .one{
     background-color: #01b29a;
     color: black;
-    font-size: 1.2vw;
+    font-size: calc(10px + 0.5vw);
 }
 
 .two{
@@ -57,7 +57,7 @@
     padding-right: 5%;
     width: 63%;
     box-shadow: 0 2px rgb(50, 50, 50);
-    font-size: 1vw;
+    font-size: calc(8px + 0.4vw);
 }
 
 .typeWaste:active{
