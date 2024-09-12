@@ -1,0 +1,17 @@
+.container1{
+    background-color: rgba(70, 136, 234, 0.4);
+    height: 55px;
+}
+
+.header{
+    padding-top: 1%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo{
+    margin-right: 20px;
+}
